@@ -1,0 +1,307 @@
+///////////////////////////
+///// Top-Section /////////
+///////////////////////////
+
+
+#topSection {
+  align-items: center;
+  img.logo{
+    width: 8em;
+    transform: translate(1em);
+  }
+  #karriereContainer{
+    background-color: $theme-conter-color;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.7em;
+    margin-left: 9vw;
+    padding: 1em;
+    width: 18em;
+    color: white;
+  }
+  #karriereStufe{
+    font-size: 1.5em;
+  }
+  @media screen and (min-width: $screen-md){
+    position: fixed;
+    top: 0;
+    padding: 2vh 2vw;
+    width: 93vw;
+    background-color:white;
+    z-index: 1;
+    #topNavi{
+      color: $theme-color;
+      gap: 3em;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+///////////////////////////
+/////// Side-Menu /////////
+///////////////////////////
+
+
+nav {
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  height: 4.5em;
+  font-size: 1.4em;
+}
+.nav-list {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 0.7em;
+}
+.nav-list>div>a {
+  &.head{
+  color: $theme-color;
+  }
+  text-decoration: none;
+  cursor: pointer;
+  //text-align: center;
+  display: block;
+  padding: 0.5em 3em;
+  transition: all 0.3s ease-in-out;
+}
+/* burger, menu-check*/
+.burger,
+.menu-check {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  nav {
+    padding: 0 1em;
+  }
+  nav ul li {
+    margin: 0 0.25em;
+  }
+  nav ul li a {
+    padding: 0.5em 0.5em;
+  }
+  .nav-white {
+    ul li {
+      margin: 0 0.25em;
+    }
+    a {
+      padding: 0.5em 0.5em;
+    }
+  }
+}
+
+///////////////////////////
+///// Smart-Phone /////////
+///////////////////////////
+
+@media screen and (max-width: $screen-sm-max) {
+  nav {
+    padding-left: 0;//4em;            löschen? siehe 163
+  }
+
+  .burger span {
+    padding: 0.15rem 1.6rem;
+    background: black;
+    margin: 0.40em 0;
+    display: block;
+    transition: all 0.4s ease;
+    border-radius: 15%;
+  }
+  .burger {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    right: 14%;
+  }
+
+  .menu-check {
+    display: block;
+    position: absolute;
+    right: 13%;
+    width: 5em;
+    height: 4em;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 200;
+  }
+
+  .menu-check:checked ~ .burger span:nth-child(1) {
+    transform: translateY(23px) rotate(135deg);
+  }
+  .menu-check:checked ~ .burger span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-check:checked ~ .burger span:nth-child(3) {
+    transform: translateY(-10px) rotate(-135deg);
+  }
+  a:hover {
+    background: white;
+  }
+  a {
+    outline: none;
+  }
+  nav span a {
+    background: transparent;
+  }
+
+  .nav-link {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    padding: 5em 0 0;
+    gap: 1em;
+    transition: all 0.3s ease-in-out;
+    li {
+      transform: translateY(40px);
+      transform: translateX(80px);
+      opacity: 0;
+      transition: inherit;
+    }
+    :nth-child(1) {
+      transition-delay: 0.25s;
+    }
+    :nth-child(2) {
+      transition-delay: 0.3s;
+    }
+    :nth-child(3) {
+      transition-delay: 0.35s;
+    }
+    :nth-child(4) {
+      transition-delay: 0.4s;
+    }
+    :nth-child(5) {
+      transition-delay: 0.5s;
+    }
+    :nth-child(6) {
+      transition-delay: 0.6s;
+    }
+  }
+
+  #checkBoxMenu:checked ~ .nav-link {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+
+  #checkBoxMenu:checked ~ #logoContainer a {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    animation: MoveLogoIntoMenu 0.4s forwards;
+  }
+  #checkBoxMenu:checked ~ .nav-link li {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  #checkBoxMenu:not(:checked) ~ .nav-link li {
+    transition-delay: 0s;
+  }
+  #checkBoxMenu:not(:checked) ~ #logoContainer a {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    animation: MoveLogoOutsideMenu 0.4s forwards;
+  }
+
+  .li-kontakt {
+    padding: 0;
+  }
+  .li-kontakt button {
+    padding: 0.4em 1.8em;
+    font-size: 1em;
+    // margin-left: 1em;
+  }
+  .li-kontakt button:hover::before {
+    height: 350%;
+  }
+  .nav-link a {
+    font-size: $navbar-font-size;
+  }
+  nav span {
+    font-size: inherit;
+    img {
+      margin-top: 5px;
+      position: relative;
+      z-index: 10;
+    }
+  }
+  @keyframes MoveLogoIntoMenu {
+    from {
+      left: 4em;
+      transform: translateX(0%);
+    }
+    to {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes MoveLogoOutsideMenu {
+    0% {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    100% {
+      position: absolute;
+      top: 0;
+      left: 4em;
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  @keyframes MoveLogoIntoMenu {
+    from {
+      left: 2em;
+      transform: translateX(0%);
+    }
+    to {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes MoveLogoOutsideMenu {
+    0% {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    100% {
+      position: absolute;
+      top: 0;
+      left: 2em;
+      transform: translateX(0);
+    }
+  }
+}
+@media screen and (max-height: 600px) {
+  .li-kontakt {
+    transition: all 0.15s ease-in-out;
+  }
+  .li-produkte:hover ~ .li-kontakt {
+    transform: translateY(80%);
+  }
+}

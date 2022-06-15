@@ -1,0 +1,81 @@
+// Variablen
+
+$theme-color: #2f73bf;
+$theme-conter-color: #ef8d35;
+$theme-type-color: #2f55b3;
+$lightBlue: #139af9;
+
+$height: 10vh;
+$font-size: 20px;
+$font-size-screen-md: 16px;
+$navbar-font-size: $font-size;
+$footer-color: $theme-color;
+
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+
+// Small screen / tablet
+
+$screen-sm: 769px !default; // Damit wird das iPad hochkannt wie ein Handy behandelt
+$screen-sm-min: $screen-sm !default;
+
+// Medium screen / desktop
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+
+// Large screen / wide desktop
+
+$screen-lg: 1400px !default;
+$screen-lg-min: $screen-lg !default;
+
+// 4K screen
+$screen-xl: 2000px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm - 1) !default;
+$screen-sm-max: ($screen-md - 1) !default;
+$screen-md-max: ($screen-lg - 1) !default;
+$screen-lg-max: ($screen-xl - 1) !default;
+
+$link-color: black;
+$link-hover-color: black;
+$link-hover-decoration: underline !default;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-size-base: $font-size !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1: floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3: ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5: $font-size-base !default;
+$font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed: floor(
+  ($font-size-base * $line-height-base)
+) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;

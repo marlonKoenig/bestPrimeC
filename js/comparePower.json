@@ -1,0 +1,45 @@
+{
+    "response":[
+        {
+            "supplier_logoLink":"eon.png",
+            "supplier_tariff":"Öko Fake",
+            "supplier_offerNumber":"0815",
+            "supplier_runTime": "12 Monate",
+            "supplier_monthlyFee":65.58,
+            "special":[
+                "Preisgarantie 36 Monate",
+                "Ökostrom"
+            ],
+            "supplier_terminationTime":"6 Wochen",
+            "supplier_incomeCommission":51.00,
+            "supplier_incomeUnits": 0.5
+        },
+        {
+            "supplier_logoLink":"vattenfall.png",
+            "supplier_tariff":"Wind Fake",
+            "supplier_offerNumber":"4711",
+            "supplier_runTime": "12 Monate",
+            "supplier_monthlyFee":75.03,
+            "special":[
+                "Preisgarantie 24 Monate"
+            ],
+            "supplier_terminationTime":"6 Wochen",
+            "supplier_incomeCommission":48.00,
+            "supplier_incomeUnits": 0.45
+        },
+        {
+            "supplier_logoLink":"O2_logo.jpeg",
+            "supplier_tariff":"Family Fake",
+            "supplier_offerNumber":"47110815",
+            "supplier_runTime": "12 Monate",
+            "supplier_monthlyFee":73.50,
+            "special":[
+                "flexibler Preis",
+                "Fahrrad generiert"
+            ],
+            "supplier_terminationTime":"6 Wochen",
+            "supplier_incomeCommission":58.00,
+            "supplier_incomeUnits": 0.6
+        }
+    ]
+}

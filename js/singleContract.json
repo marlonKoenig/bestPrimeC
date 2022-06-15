@@ -1,0 +1,16 @@
+{
+    "user_id":12345678901234,
+    "user_salutation":"Frau",
+    "user_firstName":"Angela",
+    "user_surName":"Merkel",
+    "order_type":"Strom",
+    "order_status":false,
+    "order_fault":"Wartet auf Bestätigung",
+    "order_id":"jkj787154518",
+    "order_product":"Vario",
+    "order_dealer":"Vattenfall",
+    "order_date":"16.10.2021",
+    "order_start":"",
+    "contract_document":"Auftrag vorhanden",
+    "contract_link":"Bavarium-Ipsum.pdf"
+}

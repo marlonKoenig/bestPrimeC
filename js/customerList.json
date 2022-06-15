@@ -1,0 +1,15 @@
+{
+    "user_id": 100001,
+    "user_ownCustomerNumber": 125,
+    "user_childCustomerNumber": 215,
+    "user_ownPowerCustomerNumber": 20,
+    "user_childPowerCustomerNumber": 25,
+    "user_ownGasCustomerNumber": 5,
+    "user_childGasCustomerNumber": 12,
+    "user_ownDslCustomerNumber": 25,
+    "user_childDslCustomerNumber": 52,
+    "user_ownMobileCustomerNumber": 75,
+    "user_childMobileCustomerNumber": 125,
+    "user_ownAllCustomerNumber": 250,
+    "user_childAllCustomerNumber": 550
+}

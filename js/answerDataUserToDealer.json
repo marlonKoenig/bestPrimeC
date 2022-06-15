@@ -1,0 +1,13 @@
+{
+    "customerType":"privateHome",
+    "powerType":"Heizstrom",
+    "Type":"power",
+    "energyType":"power",
+    "persons":"2",
+    "kwh":"2500",
+    "user_id":"1634634940530",
+    "customer_dealerID":"987654321",
+    "funktion":"sendKey",
+    "plz":"12347",
+    "yearlyCost":"986,54"
+}

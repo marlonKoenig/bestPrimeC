@@ -1,0 +1,103 @@
+a.loadButton:hover {
+  text-decoration: none;
+}
+
+.btn {
+  z-index: 10;
+  position: relative;
+  padding: 0.5em 1em;
+  margin: 1em;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  width: max-content;
+}
+.btn::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background: white;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover::before {
+  height: 450%;
+}
+.btn-orange {
+  border: 2px solid $theme-conter-color;
+  background: $theme-conter-color;
+  color: white;
+}
+.btn-orange:hover {
+  color: $theme-conter-color;
+}
+.btn-blue {
+  border: 2px solid $theme-color;
+  background: $theme-color;
+  color: white;
+}
+.btn-blue:hover {
+  color: $theme-color;
+}
+.btn-white {
+  border: 2px solid white;
+  background: white;
+  color: $theme-conter-color;
+}
+.btn-red {
+  border: 2px solid #dd1738;
+  background: #dd1738;
+  color: white;
+}
+.btn-red:hover {
+  color: #dd1738;
+}
+.btn-green {
+  border: 2px solid #4abd32;
+  background: #4abd32;
+  color: white;
+}
+.btn-green:hover {
+  color: #4abd32;
+}
+
+.btn-theme {
+  background: $theme-color !important;
+  color: white !important;
+}
+
+.btn-theme-reverse {
+  background: white !important;
+  color: $theme-color !important;
+  border: 2px solid $theme-color !important;
+}
+
+.btn-lightBlue {
+  background: $lightBlue !important;
+  color: white !important;
+}
+
+.btn-theme-full {
+  z-index: 10;
+  position: relative;
+  padding: 0.5em 1em;
+  margin: 1em;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  width: max-content;
+  background: $theme-color !important;
+  color: white !important;
+}

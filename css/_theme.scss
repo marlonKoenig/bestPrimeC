@@ -1,0 +1,3960 @@
+//video
+.welcomeCustomerVideo {
+  #videoBox {
+    position: relative;
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.green,
+a.green {
+  color: #11ce11; //lightgreen;
+  font-weight: bold;
+}
+.lightGreen {
+  color: rgb(0, 194, 0);
+}
+.red,
+a.red {
+  color: red;
+}
+.none {
+  display: none;
+}
+article {
+  padding: 10vh 2vw 0 2vw;
+  @media screen and (max-width: $screen-sm) and (orientation: landscape) {
+    padding: 20vh 2vw 0 2vw;
+  }
+  @media screen and (min-width: $screen-sm) {
+    padding: 15vh 2vw 0 2vw;
+  }
+  @media screen and (min-width: $screen-md) {
+    padding: 18vh 2vw 0 25vw;
+  }
+  @media screen and (min-width: $screen-lg) {
+    padding: 18vh 2vw 0 20vw;
+  }
+}
+section#contentContainer {
+  background-color: #f8fafd;
+  min-height: 75vh;
+}
+
+.videoplayer {
+  > div.videocontainer > video {
+    width: 90vw;
+    @media screen and (min-width: $screen-md) {
+      width: 40vw;
+    }
+  }
+}
+
+///////////////////////////
+/// Header-Graphic ////////
+///////////////////////////
+
+///////////////////////////
+///// Dashboard ///////////
+/// Partnerbereich ////////
+///////////////////////////
+
+///////////////////////////
+///// Schulvideos /////////
+///////////////////////////
+
+#scoolContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  //justify-content: space-around;
+  margin-bottom: 1em;
+  @media screen and (min-width: $screen-md) {
+    grid-template-columns: 2fr 3fr;
+  }
+  > #scoolList {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: $theme-color;
+    justify-content: center;
+    padding: 1em 0.5vw;
+    > div {
+      background-color: white;
+      font-size: 1.3vw;
+      color: $theme-type-color;
+      text-align: center;
+      padding: 0.7em 1em;
+      align-self: center;
+      border-radius: 0.3em;
+      cursor: pointer;
+      @media screen and (max-width: $screen-sm-max) {
+        font-size: 3vw;
+        margin: 0.5em;
+      }
+      @media screen and (max-width: $screen-xs-max) {
+        font-size: 4.5vw;
+      }
+    }
+  }
+  > #scoolVideo {
+    background-color: rgba(47, 115, 191, 0.6);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+#startBlock2 {
+  border: lightgray solid 1px;
+  border-radius: 10px;
+  #tableHeader {
+    //display: flex;
+    background-color: $theme-conter-color;
+    color: white;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    gap: 0.5em;
+    font-size: 3.5vw;
+    border-radius: 10px 10px 0 0;
+    @media screen and (min-width: $screen-md) {
+      font-size: 2.5vw;
+    }
+    padding: 0.5em 4em;
+  }
+  #tableBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    @media screen and (min-width: $screen-sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: $screen-md) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: 1em;
+    }
+    color: $theme-conter-color;
+    text-align: center;
+    padding: 2vw;
+    > div {
+      height: 5em;
+      width: 90%;
+      padding-right: 3%;
+      margin-bottom: 1em;
+      justify-self: center;
+      @media screen and (min-width: $screen-md) {
+        border-right: $theme-color 1px solid;
+      }
+      > div {
+        padding-top: 0.5em;
+        min-height: 2.5em;
+        @media screen and (max-width: $screen-sm-max) {
+          &:last-of-type {
+            border-bottom: $theme-color 1px solid;
+          }
+        }
+        @media screen and (min-width: $screen-md) {
+          &:first-of-type {
+            border-bottom: $theme-color 1px solid;
+          }
+        }
+      }
+    }
+    .einheitenContainer {
+      @media screen and (max-width: $screen-sm-max) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 2em 0;
+      }
+    }
+  }
+}
+
+///////////////////////////
+/////    Login    /////////
+///////////////////////////
+.logIn,
+.passwordReset {
+  background: #eef7ff;
+  .logInBox {
+    background: white;
+    padding-bottom: 2rem;
+    max-width: fit-content;
+    margin: 1rem auto 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    .form.ui {
+      padding: 2rem 1rem 5rem;
+    }
+    .logoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        max-width: 15em;
+      }
+      span {
+        margin-top: 0.5em;
+        font-size: 0.75em;
+      }
+    }
+  }
+}
+
+///////////////////////////
+/////    BPL    ///////////
+///////////////////////////
+
+/* #bplGrid {
+  display: grid;
+  gap: 0.3vw;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  @media screen and (min-width: $screen-md) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin-bottom: 5vw;
+    @media screen and (max-width: $screen-sm-max) {
+      width: 94vw;
+    }
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 1vw;
+    }
+  }
+  #tableHeader,
+  #upgradeHeader {
+    background-color: $theme-conter-color;
+    color: white;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    gap: 0.5em;
+    font-size: 5vw;
+    border-radius: 10px 10px 0 0;
+    padding: 0.5em 1em;
+    @media screen and (min-width: $screen-md) {
+      font-size: 1.2vw;
+      padding: 0.5em 4em;
+    }
+  }
+  #tableBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    color: $theme-conter-color;
+    text-align: center;
+    padding: 2vw;
+    font-size: 4vw;
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 1em;
+      font-size: 1.5vw;
+    }
+    > div {
+      height: 5em;
+      width: 90%;
+      padding-right: 5%;
+      margin-bottom: 1em;
+      justify-self: center;
+      @media screen and (min-width: $screen-md) {
+        &:first-of-type {
+          border-right: $theme-color 1px solid;
+        }
+      }
+      > div {
+        padding-top: 0.5em;
+        min-height: 2.5em;
+        @media screen and (max-width: $screen-sm-max) {
+          &:last-of-type {
+            border-bottom: $theme-color 1px solid;
+          }
+        }
+        @media screen and (min-width: $screen-md) {
+          &:first-of-type {
+            border-bottom: $theme-color 1px solid;
+          }
+        }
+      }
+    }
+  }
+  #bplVerdienstContainer {
+    // border: 1px solid grey;
+    // border-radius: 5px;
+    #verdienstHead {
+      background-color: $theme-color;
+      color: white;
+      justify-content: center;
+      text-align: center;
+      //gap: 0.5em;
+      font-size: 5vw;
+      border-radius: 10px 10px 0 0;
+      @media screen and (min-width: $screen-md) {
+        font-size: 1.3vw;
+      }
+      padding: 0.5em 0;
+    }
+    #verdienstBody {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 1em;
+      font-size: 4vw;
+      @media screen and (min-width: $screen-md) {
+        font-size: 1.3vw;
+      }
+      > div {
+        text-align: center;
+        &#verdienstText {
+          padding-bottom: 1em;
+        }
+        &#saldoButton {
+          width: 13em;
+          align-self: center;
+          &:hover {
+            color: $theme-conter-color;
+          }
+        }
+      }
+    }
+  }
+  #aufbauKunden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #aufbauHead {
+      background-color: $theme-color;
+      color: white;
+      //justify-content: center;
+      text-align: center;
+      //gap: 0.5em;
+      font-size: 5vw;
+      border-radius: 10px 10px 0 0;
+      @media screen and (min-width: $screen-md) {
+        font-size: 1.2vw;
+      }
+      padding: 0.5em 1em;
+    }
+    div.aufbauBody {
+      display: flex;
+      //grid-template-columns: 3fr 1fr;
+      justify-self: center;
+      align-self: center;
+      padding: 15% 0;
+      height: max-content;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      width: 90%;
+      @media screen and (max-width: $screen-sm-max) {
+        //width: 85vw;
+      }
+      font-size: 4vw;
+      @media screen and (min-width: $screen-md) {
+        font-size: 1.3vw;
+      }
+      > div#aufbauKundenLink {
+        text-align: center;
+        padding: 1.8vw;
+        flex-basis: 65%;
+        border-radius: 10px 0 0 10px;
+        background-color: #9d9b9b3d;
+        @media screen and (min-width: $screen-lg) {
+          padding: 1vw;
+        }
+      }
+      div.copy {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 35%;
+        font-size: 3vw;
+        cursor: pointer;
+        background-color: $theme-color;
+        color: white;
+        border-radius: 0 10px 10px 0;
+        @media screen and (min-width: $screen-md) {
+          font-size: 1.3vw;
+        }
+        @media screen and (min-width: $screen-lg) {
+          font-size: 1.5vw;
+        }
+        > svg {
+          width: auto;
+          height: 4vw;
+          stroke: white;
+          @media screen and (min-width: $screen-md) {
+            height: 3vw;
+          }
+          @media screen and (min-width: $screen-lg) {
+            height: 2vw;
+          }
+        }
+      }
+    }
+  }
+} */
+#upgradeContainer {
+  display: flex;
+  flex-direction: column;
+  > #upgradeBody {
+    width: 12em;
+    text-align: center;
+    align-self: center;
+    margin-top: 15%;
+    font-size: 5vw;
+    @media screen and (min-width: $screen-sm) {
+      font-size: 4vw;
+    }
+    @media screen and (min-width: $screen-md) {
+      font-size: 2vw;
+    }
+    > a {
+      color: white;
+      &:hover {
+        color: $theme-color;
+      }
+    }
+  }
+}
+#aufbauContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1vw;
+  margin-bottom: 1em;
+  @media screen and (min-width: $screen-lg) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  div.aufbauTable {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: lightgray solid 1px;
+    border-radius: 10px;
+    margin-top: 1em;
+    div.aufbauHead {
+      background-color: $theme-color;
+      color: white;
+      text-align: center;
+      font-size: 1.3vw;
+      height: min-content;
+      padding: 2vh;
+      border-radius: 10px 10px 0 0;
+      @media screen and (max-width: $screen-md-max) {
+        font-size: 2.3vw;
+      }
+      @media screen and (max-width: $screen-sm-max) {
+        font-size: 3.3vw;
+      }
+    }
+    div.aufbauBody {
+      display: flex;
+      //grid-template-columns: 3fr 1fr;
+      justify-self: center;
+      padding: 0.5em;
+      padding-bottom: 2em;
+      height: max-content;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      width: 65vw;
+      @media screen and (max-width: $screen-sm-max) {
+        //width: 85vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 35vw;
+      }
+      > div#aufbauFilialLink,
+      div#aufbauKundenLink {
+        text-align: center;
+        padding: 1.8vw;
+        flex-basis: 65%;
+        border-radius: 10px 0 0 10px;
+        background-color: #9d9b9b3d;
+        @media screen and (min-width: $screen-lg) {
+          padding: 1vw;
+        }
+      }
+      div.copy {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 35%;
+        font-size: 3vw;
+        cursor: pointer;
+        background-color: $theme-color;
+        color: white;
+        border-radius: 0 10px 10px 0;
+        @media screen and (min-width: $screen-md) {
+          font-size: 2vw;
+        }
+        @media screen and (min-width: $screen-lg) {
+          font-size: 1.5vw;
+        }
+        > svg {
+          width: auto;
+          height: 4vw;
+          stroke: white;
+          @media screen and (min-width: $screen-md) {
+            height: 3vw;
+          }
+          @media screen and (min-width: $screen-lg) {
+            height: 2vw;
+          }
+        }
+      }
+    }
+  }
+  #aufbauKunden {
+    .aufbauHead,
+    .copy {
+      background-color: #606972;
+    }
+  }
+}
+
+#verdienstContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: lightgray solid 1px;
+  border-radius: 10px;
+  margin: 1em auto 0 auto;
+  @media screen and (min-width: $screen-sm) {
+    width: 80%;
+  }
+  @media screen and (min-width: $screen-md) {
+    width: 60%;
+  }
+  > div#verdienstHead {
+    background-color: $theme-conter-color;
+    color: white;
+    font-size: 4.7vw;
+    text-align: center;
+    height: min-content;
+    padding: 2vh;
+    border-radius: 10px 10px 0 0;
+    @media screen and (min-width: $screen-md) {
+      font-size: 3vw;
+    }
+    @media screen and (min-width: $screen-lg) {
+      font-size: 2.5vw;
+    }
+  }
+  > div#verdienstBody {
+    color: $theme-conter-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > div {
+      padding: 1.5em 0;
+      font-size: 4.5vw;
+      @media screen and (min-width: $screen-md) {
+        font-size: 2vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        font-size: 1.3vw;
+      }
+      &:first-of-type {
+        border-bottom: $theme-color 1px solid;
+      }
+    }
+    > div#saldoButton {
+      padding: 0.5em 1em;
+      &:hover {
+        color: $theme-type-color;
+      }
+    }
+  }
+}
+
+///////////////////////////
+/////////  BPX ////////////
+///////////////////////////
+
+section#info {
+  display: none;
+  @media screen and (max-width: $screen-xs-max) {
+    display: block;
+    margin: 10vh 0 -6vh 2vw;
+  }
+}
+.counterModul {
+  display: grid;
+  @media screen and (min-width: $screen-sm) {
+    transform: translateY(-3vh);
+  }
+  > #headLine {
+    font-weight: bolder;
+  }
+  #counterContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1em 1fr;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid $theme-type-color;
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+    @media screen and (max-width: $screen-xs-max) {
+      width: 90vw;
+    }
+  }
+  .counterContainerHead {
+    font-size: 3vw;
+    @media screen and (min-width: $screen-sm) {
+      font-size: 0.5vw;
+    }
+  }
+  .counterContainerBody {
+    font-size: 7vw;
+    min-width: 1.2em;
+    @media screen and (min-width: $screen-sm) {
+      font-size: 1.5vw;
+    }
+    background: $theme-type-color;
+    color: white;
+    width: min-content;
+    border-radius: 3px;
+    &.redBG {
+      background: red;
+    }
+  }
+}
+
+///////////////////////////
+///// Stromrechner ////////
+///////////////////////////
+
+.stromRechner {
+  /* iframe { // Geparkt für später (aktuel ist die Datei auf REM-2021-10-10
+    width: 75vw;
+    height: 100vh;
+    margin-top: 5vh;
+  } */
+  #powerContainer {
+    display: grid;
+    @media screen and (min-width: $screen-lg) {
+      grid-template-columns: 2fr 3fr;
+      gap: 1vw;
+    }
+    h2 {
+      font-size: 11vw;
+      @media screen and (min-width: $screen-xs) {
+        font-size: 9.5vw;
+      }
+      @media screen and (min-width: $screen-sm) {
+        font-size: 8vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        font-size: 6vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        font-size: 2.5vw;
+      }
+    }
+  }
+  #offerContainer {
+    // Angebotsaufnahme Strom und Gas
+    padding-left: 0.4em;
+    @media screen and (min-width: $screen-md) {
+      padding-left: 1em;
+    }
+    .buttonTable {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 1em 0;
+      gap: 1vw;
+      div.auswahlbutton {
+        cursor: pointer;
+      }
+      @media screen and (min-width: $screen-md) {
+        width: 50vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 25vw;
+      }
+      .auswahlbutton {
+        display: flex;
+        align-items: center;
+        color: $theme-color;
+        flex-direction: column;
+        width: 7em;
+        padding: 0.7em;
+        box-shadow: grey 1px 1px 3px;
+        border-radius: 5px;
+        > svg {
+          width: 3em;
+          stroke-width: 2;
+        }
+        > div.auswahlbuttonText {
+          font-size: 0.7em;
+        }
+        &.activ {
+          // wird per JS auf die aktive Auswahl gesetzt
+          border: $theme-color solid 3px;
+        }
+      }
+    }
+    .inputContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 1em;
+      gap: 1em;
+      width: 95vw;
+      @media screen and (min-width: 900px) {
+        width: 50vw;
+        margin: 0.5em 0;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 25vw;
+        margin: 0.5em 0;
+      }
+    }
+    .selectListe {
+      background: white;
+      border-radius: 3px;
+      width: 9em;
+    }
+    #personenContainer {
+      // Auswahl der Personenanzahl im Stromrechner
+      display: flex;
+      width: 8em;
+      justify-content: space-around;
+      > div > svg {
+        // Die Männchen
+        stroke-width: 3;
+        color: $theme-color;
+        width: 8vw;
+        @media screen and (min-width: $screen-xs) {
+          width: 3.5vw;
+        }
+        @media screen and (min-width: $screen-md) {
+          width: 3vw;
+        }
+        @media screen and (min-width: $screen-lg) {
+          width: 2vw;
+        }
+      }
+      > div.persons {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        font-size: 0.8em;
+        color: $theme-color;
+        &.activ > svg {
+          fill: $theme-color;
+        }
+      }
+    }
+    div.tableHead {
+      font-size: 4vw;
+      margin-bottom: 0.5em;
+      @media screen and (min-width: 500px) {
+        font-size: 0.7em;
+      }
+    }
+    #lastRow {
+      display: flex;
+      padding-bottom: 1em;
+      gap: 2em;
+      width: 95vw;
+      @media screen and (min-width: 900px) {
+        width: 50vw;
+        margin: 0.5em 0;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 25vw;
+        margin: 0.5em 0;
+      }
+      #fireButton {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+////////////////////////
+//// Ausgabebereich ////
+///// Strom & Gas //////
+////////////////////////
+embed.pdf {
+  width: 95vw;
+  height: 80vh;
+  overflow-x: scroll;
+  @media screen and (min-width: $screen-xs) {
+    width: 75vw;
+    height: 80vh;
+  }
+  @media screen and (min-width: $screen-md) {
+    width: 70vw;
+    height: 80vh;
+  }
+  @media screen and (min-width: $screen-lg) {
+    width: 75vw;
+    height: 80vh;
+  }
+}
+.stromRechner #compareContainer {
+  padding-left: 1em;
+  @media screen and (min-width: $screen-md) {
+    padding: 0.5em;
+  }
+  #comparePowerContainer {
+    .responseContainer {
+      border: lightgreen 1px solid;
+      border-radius: 8px;
+      margin: 1em 0;
+      padding: 1em;
+      @media screen and (min-width: $screen-sm) {
+        width: 100%;
+      }
+      .responseUpperLine {
+        display: flex;
+        flex-wrap: nowrap;
+        .logo {
+          flex: 2;
+          img {
+            height: 2em;
+          }
+        }
+        .supplier_tariff {
+          flex: 2;
+          font-weight: bold;
+        }
+        .supplier_monthlyFee {
+          flex: 2;
+          text-align: right;
+        }
+      }
+      .offerData {
+        display: flex;
+        justify-content: space-between;
+        > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          gap: 0.4em;
+        }
+        .left {
+          text-align: left;
+        }
+        .right {
+          text-align: right;
+        }
+        .small {
+          font-size: 0.7em;
+        }
+        .specialItem > img {
+          width: 1em;
+        }
+        .orderButton {
+          background-color: green;
+          color: white;
+          padding: 0.5em;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+#firstCompareLine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* @media screen and (min-width: $screen-lg) {
+    grid-template-columns: 1fr 1fr;
+    align-items: space-between;
+  } */
+  #compareResults {
+    font-size: 3vw;
+    justify-self: start;
+    padding: 0;
+    @media screen and (min-width: $screen-md) {
+      font-size: 2vw;
+    }
+    @media screen and (min-width: $screen-lg) {
+      font-size: 0.7vw;
+      justify-self: end;
+      padding: 5em 0;
+    }
+  }
+}
+#compareContent {
+  .empty {
+    //Solange kein Inhalt vorhanden ist. Danach wird die Klasse mit JS entfernt
+    border: lightgreen solid 1px;
+    border-radius: 6px;
+    padding: 1em;
+    font-size: 0.8em;
+    min-height: 40vh;
+    margin-top: -5em;
+    width: 75vw;
+    @media screen and (min-width: $screen-xs) {
+      width: 80vw;
+      margin-top: -6em;
+    }
+    @media screen and (min-width: $screen-sm) {
+      margin-top: -8em;
+    }
+    @media screen and (min-width: $screen-md) {
+      width: 65vw;
+      margin-top: -8em;
+    }
+    @media screen and (min-width: $screen-lg) {
+      width: 42vw;
+      margin-top: -10em;
+    }
+  }
+}
+
+///////////////////////////
+////// DSL-Rechner ////////
+///////////////////////////
+
+#dslContainer {
+  min-height: 75vh;
+  #dslFirstLine {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    @media screen and (min-width: $screen-md) {
+      grid-template-columns: 1fr 3fr 3fr 1fr 1fr;
+      margin-top: 5vh;
+    }
+    gap: 1.1vw;
+    background-color: $theme-conter-color;
+    padding: 0.5vw;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    div {
+      background-color: white;
+      padding-left: 0.5vw;
+      &#dslContainerButton {
+        padding: 0;
+      }
+    }
+    input {
+      // appearance: none;
+      transform: translateY(-0.2em);
+      @media screen and (min-width: $screen-md) {
+        transform: translateY(-0.5em);
+      }
+    }
+    #plzContainer {
+      input {
+        max-width: 4em;
+        height: 1.5em;
+        border: 0;
+        label {
+          width: 4em;
+        }
+      }
+    }
+    #ortContainer {
+      input {
+        max-width: 20em;
+        height: 1.5em;
+        border: 0;
+        label {
+          width: 20em;
+        }
+      }
+    }
+    #strasseContainer {
+      input {
+        max-width: 20em;
+        height: 1.5em;
+        border: 0;
+        label {
+          width: 20em;
+        }
+      }
+    }
+    #hsNrContainer {
+      input {
+        max-width: 3em;
+        height: 1.5em;
+        border: 0;
+        label {
+          width: 3em;
+        }
+      }
+    }
+    #dslContainerButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > div.btn-blue {
+        background-color: $theme-color;
+        font-size: 1.5vw;
+        @media screen and (min-width: $screen-md) {
+          font-size: 0.8vw;
+        }
+        margin: 0.5vw;
+        &:hover {
+          color: $theme-type-color;
+        }
+      }
+    }
+    .firstLineDataContainer {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      .firstLineDescription {
+        font-size: 0.5em;
+      }
+    }
+  }
+}
+
+// DSL und Mobilfunktabelle
+
+#dslTable {
+  display: grid;
+  grid-template-columns: 2fr 15fr 4fr 2fr 2fr 2fr 2fr 4fr;
+  align-items: center;
+  font-size: 1vw;
+  .headLine {
+    background: lightgray;
+    height: 2.5vw;
+    display: flex;
+    align-items: center;
+  }
+  > div:not(.headLine) {
+    border: lightgrey 1px solid;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    &.anbieter {
+      padding: 0;
+    }
+  }
+  .anbieter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > img {
+      width: 3vw;
+    }
+  }
+  .highlight {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > .btn {
+      font-size: 1vw;
+    }
+  }
+}
+
+///////////////////////////
+////// Mobil-Funk /////////
+///////////////////////////
+
+#mobilContainer {
+  min-height: 75vh;
+  margin-top: 3vh;
+  #mobilFirstLine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: white;
+    padding-bottom: 2vh;
+    > .logoSection > img {
+      max-height: 10vh;
+    }
+  }
+}
+
+///////////////////////////
+////// KFZ-Bereich ////////
+///////////////////////////
+
+#kfzContainer {
+  font-size: 0.6em;
+  @media screen and (min-width: $screen-sm) {
+    display: grid;
+    grid-template-columns: max-content auto;
+  }
+  #offerContainer {
+    #intro {
+      font-size: 1.1em;
+      margin-top: 0.5em;
+    }
+    .tableHead {
+      font-size: 1.5em;
+      margin-top: 0.5em;
+    }
+    > div > div {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      border: grey solid 1px;
+      border-radius: 4px;
+      padding: 0.5em;
+      width: 5em;
+      margin-bottom: 0.7vw;
+      color: black;
+      &.activ {
+        border: $theme-color solid 3px;
+        color: $theme-type-color;
+      }
+    }
+    #deckung,
+    #werkstatt {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .selbstBeteiligung {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    #zahlweise {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    input#kilometer {
+      border: $theme-color solid 1px;
+      border-radius: 3px;
+    }
+  }
+  #compareKfzInsurance {
+    padding-top: 3vh;
+    padding-left: 1vw;
+    > img {
+      max-width: 90vw;
+    }
+    @media screen and (min-width: $screen-sm) {
+      padding: 10vh 1vw 0 5vw;
+      > img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+///////////////////////////
+///////// News ////////////
+///////////////////////////
+
+.news {
+  #contentContainer {
+    min-height: 75vh;
+  }
+  #newsTable {
+    display: flex;
+    flex-direction: column;
+    > div:nth-of-type(odd) {
+      background: #e9ebf5; // hellgrau
+    }
+    > div:nth-of-type(even) {
+      background: #cfd5ea; // blaugrau
+    }
+    .newsTableRow {
+      display: grid;
+      grid-template-columns: 1fr 5fr 5fr;
+      > div {
+        padding-left: 0.5vw;
+      }
+      &.headline {
+        background-color: $theme-color;
+        color: white;
+        margin-top: 2vh;
+        > div {
+          display: flex;
+          padding: 0.5vw;
+          align-items: center;
+        }
+      }
+      div.datum {
+        text-align: left;
+      }
+    }
+  }
+}
+
+///////////////////////////
+//// Marketing-Center /////
+///////////////////////////
+
+.marketingcenter {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+    ul {
+      list-style: none;
+      > li {
+        margin-bottom: 0.5vw;
+      }
+    }
+  }
+}
+
+///////////////////////////
+//// Business-Rechner /////
+///////////////////////////
+
+.businessrechner {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+    #berechnungsContainer {
+      display: grid;
+      grid-auto-rows: 1fr;
+      @media screen and (min-width: $screen-sm) {
+        grid-template-columns: 1fr 1fr;
+      }
+      #inputContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .inputBerechnungsContainer {
+          display: flex;
+          flex-direction: column;
+          margin: 1em 0;
+          .inputArea {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 1em;
+            > span:first-of-type {
+              flex: 5;
+            }
+            > span:nth-of-type(2) {
+              flex: 2;
+            }
+            > span:nth-of-type(3) {
+              flex: 5; // begrenzt die Gesamtbreite
+            }
+            .plus,
+            .minus {
+              cursor: pointer;
+              img.circle {
+                width: 1.5em;
+                height: 1.5em;
+              }
+            }
+          }
+        }
+      }
+      #outputContainer {
+        display: flex;
+        flex-direction: column;
+        > img {
+          width: 70%;
+        }
+        #outputContainerErgebnis {
+          align-self: end;
+          width: 15em;
+          margin-top: 1em;
+          #outputContainerErgebnisBereich {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+    #fussnote {
+      font-size: 0.6em;
+      text-align: right;
+    }
+  }
+}
+
+///////////////////////////
+//// Online-Beratung //////
+///////////////////////////
+
+.onlineberatung {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+  }
+}
+
+///////////////////////////
+///////// TGR24 ///////////
+///////////////////////////
+
+.tgr24 {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+    #tgrHeadline {
+      display: flex;
+      justify-content: center;
+      background-color: $theme-conter-color;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.4em;
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+    #pictureContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      img {
+        width: 95vw;
+        @media screen and (min-width: $screen-sm) {
+          width: 45vw;
+        }
+        @media screen and (min-width: $screen-md) {
+          width: 33vw;
+        }
+        @media screen and (min-width: $screen-lg) {
+          width: 24vw;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////
+///// Social-Posting //////
+///////////////////////////
+
+.socialpost {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+  }
+}
+
+///////////////////////////
+///////// Team ////////////
+///////////////////////////
+
+.mein-team {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+    #teamContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      @media screen and (max-width: $screen-sm-max) {
+        justify-items: center;
+      }
+      @media screen and (min-width: $screen-md) {
+        grid-template-columns: 1fr 1fr;
+        gap: 1vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1vw;
+      }
+      .cards {
+        @media screen and (max-width: $screen-sm-max) {
+          width: 80%;
+          margin-bottom: 2vh;
+        }
+      }
+      #userOwnCommission {
+        background-color: #00beff;
+      }
+      #userOwnChilds {
+        background-color: #6bce77;
+      }
+      #userOwnCommission,
+      #userOwnChilds {
+        display: grid;
+        align-items: end;
+        grid-template-rows: 5vh 10vh 9vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "header header header grafik"
+          "gesamt gesamt gesamt grafik"
+          "commission commission childCom childCom";
+        padding: 1vw;
+        border-radius: 5px;
+        color: white;
+      }
+      #userOwnRank {
+        display: grid;
+        align-items: end;
+        grid-template-rows: 5vh 10vh 9vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "grafik header header header"
+          "grafik gesamt gesamt gesamt"
+          "commission commission commission commission";
+        padding: 1vw;
+        border-radius: 5px;
+        background-color: #5c6bc0;
+        color: white;
+      }
+      #userOwnSaldo {
+        background-color: #ff6364;
+      }
+      #userOwnDeficit {
+        background-color: $theme-conter-color;
+      }
+      #userNewChilds {
+        background-color: #ff6364;
+      }
+      #userOwnSaldo,
+      #userOwnDeficit,
+      #userNewChilds {
+        display: grid;
+        align-items: end;
+        grid-template-rows: 3vh 3vh 10vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "grafik header header header"
+          "grafik gesamt gesamt gesamt"
+          "commission commission commission commission";
+        padding: 1vw;
+        border-radius: 5px;
+        color: white;
+      }
+      .header {
+        grid-area: header;
+        align-self: start;
+      }
+      .grafik {
+        grid-area: grafik;
+        align-self: center;
+        justify-self: center;
+        > img {
+          width: 3em;
+        }
+        > svg {
+          width: 3em;
+        }
+      }
+      .betrag {
+        grid-area: betrag;
+      }
+      .commission {
+        grid-area: commission;
+        border-top: solid 1px white;
+        padding-top: 2vh;
+      }
+      .childCom {
+        grid-area: childCom;
+        border-top: solid 1px white;
+        padding-top: 2vh;
+      }
+      a.childCom,
+      a.childCom:hover,
+      a.childCom:visited {
+        color: white;
+        outline: none;
+        text-decoration: none;
+      }
+      .cardText {
+        font-size: 2.5vw;
+        @media screen and (min-width: $screen-sm) {
+          font-size: 0.8vw;
+        }
+        margin-right: 1em;
+      }
+      .end {
+        justify-self: end;
+      }
+    }
+    #childProblemsContainer {
+      // background-color: $theme-type-color;
+      background-color: #475468;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2em 0;
+      padding: 1em;
+      #childProblemsHeadline {
+        .rightSide {
+          margin-left: 0.5em;
+        }
+      }
+      #childProblemsOverview {
+        display: flex;
+        gap: 0.5em;
+        .childField {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          > img {
+            width: 2em;
+            margin: 0.5em;
+          }
+          .childTextField {
+            font-weight: bold;
+            .green {
+              color: lightgreen;
+            }
+          }
+        }
+      }
+    }
+    #badChildListingContainer {
+      background-color: #f8fafd;
+      color: black;
+      width: 25em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .badChildField {
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 2em;
+        //display: flex;
+        /* display: grid;
+        align-items: end;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "user_partnerID user_partnerID"
+          "gesamt gesamt gesamt grafik"
+          "commission commission childCom childCom"; */
+        justify-content: center;
+        align-items: center;
+        &.bad {
+          border: 2px solid red;
+        }
+        span.green {
+          color: lightgreen;
+          font-weight: bold;
+        }
+      }
+      .verticalLine {
+        height: 3em;
+        border-right: 1px solid grey;
+        &:last-of-type {
+          height: 0;
+        }
+      }
+    }
+    #tableContainer {
+      @media screen and (min-width: $screen-sm) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .tableContainer {
+        background-color: #007dff;
+        color: white;
+        padding: 1vw;
+        border-radius: 5px;
+        margin-top: 1em;
+        .tableContainerHeader {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          padding: 0.5em;
+          .subTitle {
+            font-size: 0.7em;
+          }
+        }
+        .table-row {
+          background-color: #e9ebf5;
+          color: black;
+          &:nth-of-type(odd) {
+            background-color: #92a4e2;
+            color: black;
+          }
+          &:first-of-type {
+            background-color: $theme-color;
+            color: white;
+          }
+        }
+        .table-row {
+          display: flex;
+          padding: 0.2vw;
+          @media screen and (min-width: $screen-sm) {
+            width: 30vw;
+          }
+          .name {
+            flex: 3;
+          }
+          .einheiten {
+            flex: 2;
+          }
+          .stadt {
+            flex: 3;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////
+/////// Filialen //////////
+///////////////////////////
+
+.meine-filialen {
+  #startBlock1 {
+    min-height: 120vh;
+  }
+  #introCard {
+    width: max-content;
+    background-color: light-green;
+    border-radius: 5px;
+    padding: 1vw;
+    margin: 1vw;
+  }
+  .table {
+    font-size: 0.6em;
+    @media screen and (min-width: $screen-sm) {
+      font-size: 0.8em;
+    }
+  }
+  #closeX {
+    padding: 0.5vw;
+    padding-right: 1vw;
+    cursor: pointer;
+  }
+  .user_id {
+    // display: table-cell;
+    width: 4em;
+  }
+
+  .user_status {
+    // display: table-cell;
+    width: 3em;
+    &.green {
+      color: green;
+    }
+    &.red {
+      color: red;
+    }
+  }
+  .sponsor {
+    // display: table-cell;
+    width: 9em;
+  }
+  .email {
+    // display: table-cell;
+    width: 13em;
+  }
+  .firstName {
+    // display: table-cell;
+    width: 7em;
+  }
+  .surName {
+    // display: table-cell;
+    width: 7em;
+  }
+  .regDate {
+    // display: table-cell;
+    width: 5.5em;
+  }
+  .rank {
+    // display: table-cell;
+    width: 7.5em;
+  }
+  .user_workPlace {
+    // display: table-cell;
+    width: 7.5em;
+  }
+  .details {
+    width: 7em;
+    text-align: center;
+    // font-size:2vw;
+    position: relative; // für Detailstabelle
+    /* @media screen and (min-width: $screen-sm) {
+      font-size:1vw;
+    } */
+  }
+  #detailsContainer {
+    position: absolute;
+    left: 10vw;
+    margin-top: 1em;
+    width: 70vw;
+    height: 25vw;
+    padding: 3vw;
+    border-radius: 5px;
+    background-color: lightgray;
+    display: grid;
+    align-items: end;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "pos1 pos2 pic"
+      "pos3 pos4 pic"
+      "pos5 pos6 ."
+      "pos7 pos8 ."
+      "pos9 pos10 .";
+    @media screen and (min-width: $screen-sm) {
+      left: 25vw;
+      width: 40vw;
+      height: 15vw;
+    }
+    @media screen and (min-width: $screen-md) {
+      left: 25vw;
+      width: 60vw;
+      height: 25vw;
+    }
+    @media screen and (min-width: $screen-lg) {
+      left: 25vw;
+      width: 50vw;
+      height: 20vw;
+    }
+    @media screen and (min-width: $screen-xl) {
+      left: 25vw;
+      width: 35vw;
+      height: 15vw;
+    }
+    #firstName {
+      grid-area: pos1;
+      align-self: start;
+    }
+    #surName {
+      grid-area: pos2;
+      align-self: start;
+    }
+    #user_workPlace {
+      grid-area: pos3;
+      align-self: start;
+    }
+    #regDate {
+      grid-area: pos4;
+      align-self: start;
+    }
+    #user_status {
+      grid-area: pos5;
+      align-self: start;
+    }
+    #user_license {
+      grid-area: pos6;
+      align-self: start;
+    }
+    #user_directChilds {
+      grid-area: pos7;
+      align-self: start;
+    }
+    #user_totalChilds {
+      grid-area: pos8;
+      align-self: start;
+    }
+    #rank {
+      grid-area: pos9;
+      align-self: start;
+    }
+    #user_missingUnits {
+      grid-area: pos10;
+      align-self: start;
+    }
+    #user_picture {
+      grid-area: pic;
+      align-self: start;
+      > img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 3px 3px 15px grey;
+      }
+    }
+    .microContainer {
+      position: relative;
+      .caption {
+        font-size: 0.6em;
+        color: grey;
+        position: absolute;
+        top: 3%;
+      }
+      .text {
+        position: absolute;
+        @media screen and (max-width: $screen-xs-max) {
+          top: 12px;
+        }
+        &.green {
+          color: #11ce11;
+          font-weight: bold;
+        }
+        &.red {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////
+///////// Team ////////////
+///////////////////////////
+
+#world svg .europe:hover ~ .europe {
+  fill: #ff6364;
+}
+.europe {
+  fill: green;
+}
+
+///////////////////////////
+//////// Kunden ///////////
+///////////////////////////
+
+.meine-kunden {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+    #customerContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      @media screen and (max-width: $screen-sm-max) {
+        justify-items: center;
+      }
+      @media screen and (min-width: $screen-md) {
+        grid-template-columns: 1fr 1fr;
+        gap: 1vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1vw;
+      }
+      .cards {
+        @media screen and (max-width: $screen-sm-max) {
+          width: 80%;
+          margin-bottom: 2vh;
+        }
+        display: grid;
+        align-items: end;
+        grid-template-rows: 5vh 10vh 9vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "header header header graphics"
+          "total total total graphics"
+          "commission commission childCom childCom";
+        padding: 1vw;
+        border-radius: 5px;
+        color: white;
+      }
+      #totalCustomerNumber {
+        background-color: #ff6364;
+      }
+      #totalPowerCustomerNumber {
+        background-color: #6bce77;
+      }
+      #totalGasCustomerNumber {
+        background-color: #00beff;
+        color: white;
+      }
+      #totalDslCustomerNumber {
+        background-color: $theme-color;
+      }
+      #totalMobileCustomerNumber {
+        background-color: $theme-conter-color;
+      }
+      #totalAllCustomerNumber {
+        background-color: #7030a0;
+      }
+      .header {
+        grid-area: header;
+        align-self: start;
+      }
+      .graphics {
+        grid-area: graphics;
+        align-self: center;
+        justify-self: center;
+        > img {
+          width: 3em;
+        }
+      }
+      .commission {
+        grid-area: commission;
+        border-top: solid 1px white;
+        padding-top: 2vh;
+      }
+      .childCom {
+        grid-area: childCom;
+        border-top: solid 1px white;
+        padding-top: 2vh;
+      }
+      .cardText {
+        font-size: 2.5vw;
+        @media screen and (min-width: $screen-sm) {
+          font-size: 0.8vw;
+        }
+        margin-right: 1em;
+      }
+    }
+    #customerTableNumber {
+      margin-top: 2vh;
+      > span {
+        font-weight: bold;
+        color: lightgreen;
+      }
+    }
+    #customerTable {
+      margin-top: 2vh;
+      font-size: 1.4vw;
+      @media screen and (min-width: $screen-sm) {
+        font-size: 1.3vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        font-size: 1.1vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        font-size: 1vw;
+      }
+      .user_id {
+        width: 7em;
+      }
+      .customer_name {
+        width: 12em;
+      }
+      .customer_contractPower {
+        width: 7em;
+        text-align: center;
+      }
+      .customer_contractGas {
+        width: 6em;
+        text-align: center;
+      }
+      .customer_contractDsl {
+        width: 6em;
+        text-align: center;
+      }
+      .customer_contractMobile {
+        width: 9em;
+        text-align: center;
+      }
+      .customer_contractSolar {
+        width: 7em;
+        text-align: center;
+      }
+      .customer_openTicket {
+        width: 4em;
+        text-align: center;
+      }
+      .customer_recommendation {
+        width: 7em;
+        text-align: center;
+      }
+      .headline {
+        text-align: left;
+      }
+    }
+    #singleUserTable {
+      background-color: lightgrey;
+      padding: 1em;
+      margin: 2em 0;
+      .row {
+        display: flex;
+        padding-bottom: 1em;
+        > div {
+          width: 15em;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////
+///// Online-Beratung /////
+///////////////////////////
+
+.onlineberatung {
+  #loadButton {
+    background-color: lightgreen;
+    width: 12em;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 1em;
+    text-align: center;
+    cursor: pointer;
+  }
+  #customerTableNumber {
+    margin-top: 1vh;
+    > span {
+      font-weight: bold;
+      color: lightgreen;
+    }
+  }
+  #customerTable {
+    margin-top: 2vh;
+    font-size: 1.4vw;
+    @media screen and (min-width: $screen-sm) {
+      font-size: 1.3vw;
+    }
+    @media screen and (min-width: $screen-md) {
+      font-size: 1.1vw;
+    }
+    @media screen and (min-width: $screen-lg) {
+      font-size: 1vw;
+    }
+    .user_id {
+      width: 7em;
+    }
+    .customer_name {
+      width: 12em;
+    }
+    .customer_contractPower {
+      width: 7em;
+      text-align: center;
+    }
+    .customer_contractGas {
+      width: 6em;
+      text-align: center;
+    }
+    .customer_contractDsl {
+      width: 6em;
+      text-align: center;
+    }
+    .customer_contractMobile {
+      width: 9em;
+      text-align: center;
+    }
+    .customer_contractSolar {
+      width: 7em;
+      text-align: center;
+    }
+    .customer_openTicket {
+      width: 4em;
+      text-align: center;
+    }
+    .customer_recommendation {
+      width: 7em;
+      text-align: center;
+    }
+    .headline {
+      text-align: left;
+    }
+  }
+  #singleUserTable {
+    background-color: lightgrey;
+    padding: 1em;
+    margin: 2em 0;
+    .row {
+      display: flex;
+      padding-bottom: 1em;
+      > div {
+        width: 15em;
+      }
+      #user_street {
+        width: 12em;
+      }
+      #user_houseNumber {
+        width: 5em;
+      }
+      #user_additionalAdress {
+        width: 11em;
+      }
+    }
+  }
+  #connectButton {
+    background-color: #00cdff;
+    width: 12em;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 1em;
+    text-align: center;
+    cursor: pointer;
+    &.inactive {
+      background-color: lightgrey;
+    }
+  }
+
+  #powerContainer {
+    display: grid;
+    @media screen and (min-width: $screen-lg) {
+      grid-template-columns: 2fr 3fr;
+      gap: 1vw;
+    }
+    h2 {
+      font-size: 11vw;
+      @media screen and (min-width: $screen-xs) {
+        font-size: 9.5vw;
+      }
+      @media screen and (min-width: $screen-sm) {
+        font-size: 8vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        font-size: 6vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        font-size: 2.5vw;
+      }
+    }
+  }
+  #offerContainer {
+    // Angebotsaufnahme Strom und Gas
+    padding-left: 0.4em;
+    @media screen and (min-width: $screen-md) {
+      padding-left: 1em;
+    }
+    .buttonTable {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 1em 0;
+      gap: 1vw;
+      div.auswahlbutton {
+        cursor: pointer;
+      }
+      @media screen and (min-width: $screen-md) {
+        width: 50vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 25vw;
+      }
+      .auswahlbutton {
+        display: flex;
+        align-items: center;
+        color: $theme-color;
+        flex-direction: column;
+        width: 7em;
+        padding: 0.7em;
+        box-shadow: grey 1px 1px 3px;
+        border-radius: 5px;
+        > svg {
+          width: 3em;
+          stroke-width: 2;
+        }
+        > div.auswahlbuttonText {
+          font-size: 0.7em;
+        }
+        &.activ {
+          // wird per JS auf die aktive Auswahl gesetzt
+          border: $theme-color solid 3px;
+        }
+      }
+    }
+    .inputContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 1em;
+      gap: 1em;
+      width: 95vw;
+      @media screen and (min-width: 900px) {
+        width: 50vw;
+        margin: 0.5em 0;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 25vw;
+        margin: 0.5em 0;
+      }
+    }
+    .selectListe {
+      background: white;
+      border-radius: 3px;
+      width: 9em;
+    }
+    #personenContainer {
+      // Auswahl der Personenanzahl im Stromrechner
+      display: flex;
+      width: 8em;
+      justify-content: space-around;
+      > div > svg {
+        // Die Männchen
+        stroke-width: 3;
+        color: $theme-color;
+        width: 8vw;
+        @media screen and (min-width: $screen-xs) {
+          width: 3.5vw;
+        }
+        @media screen and (min-width: $screen-md) {
+          width: 3vw;
+        }
+        @media screen and (min-width: $screen-lg) {
+          width: 2vw;
+        }
+      }
+      > div.persons {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        font-size: 0.8em;
+        color: $theme-color;
+        &.activ > svg {
+          fill: $theme-color;
+        }
+      }
+    }
+    div.tableHead {
+      font-size: 4vw;
+      margin-bottom: 0.5em;
+      @media screen and (min-width: 500px) {
+        font-size: 0.7em;
+      }
+    }
+    #lastRow {
+      display: flex;
+      padding-bottom: 1em;
+      gap: 2em;
+      width: 95vw;
+      @media screen and (min-width: 900px) {
+        width: 50vw;
+        margin: 0.5em 0;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 25vw;
+        margin: 0.5em 0;
+      }
+      #fireButton {
+        margin-top: 0;
+      }
+    }
+  }
+  #compareContainer {
+    // Ausgabebereich Strom und Gas
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    #firstCompareLine {
+      display: flex;
+      flex-wrap: wrap;
+      height: min-content;
+      justify-content: space-between;
+      position: relative;
+      #compareResults {
+        padding: 1em 0;
+      }
+    }
+    h2 {
+      margin: 0;
+      font-size: 10vw;
+      @media screen and (min-width: $screen-sm) {
+        font-size: 7.5vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        font-size: 5.5vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        font-size: 2.5vw;
+      }
+    }
+    #compareContent {
+      display: flex;
+      flex-direction: column;
+      #refreshButton {
+        background-color: $theme-color;
+        color: white;
+        width: 10em;
+        padding: 0.5em;
+        margin: 1em 0;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+
+    #billingContainer {
+      #billLoadRow {
+        #uploadform {
+          display: flex;
+          flex-direction: column;
+          input[type="file" i] {
+            width: 30em;
+          }
+        }
+        #result {
+          margin: 1em 0;
+          span.done {
+            background-color: green;
+            padding: 0.5em;
+            border-radius: 5px;
+            color: white;
+          }
+        }
+        #billLoadButton {
+          background-color: $theme-color;
+          color: white;
+          width: 10em;
+          padding: 0.5em;
+          margin: 1em 0;
+          border-radius: 5px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+      #billOutputContainer {
+        min-height: 40vh;
+        #billOutputTable {
+          // grundsätzliches Design wird über tables formatiert
+          margin: 1em 0;
+          width: 100%;
+          .billName {
+            display: flex;
+            padding: 0.5em;
+            a,
+            a:hover,
+            a:visited,
+            a:focus {
+              text-decoration: none;
+            }
+          }
+          .billDate {
+            width: 10em;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////
+///////// Team ////////////
+///////////////////////////
+
+.ranking {
+  #startBlock1 {
+    min-height: 75vh;
+    .containerRow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+    }
+    #videoContainer {
+      @media screen and (min-width: $screen-md) {
+        max-width: 38%;
+      }
+      > video {
+        width: 18em;
+        max-width: 95vw;
+        height: auto;
+        vertical-align: bottom;
+        @media screen and (min-width: $screen-md) {
+          width: 30em;
+          max-width: 100%;
+        }
+      }
+    }
+    #personalContainer {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: white;
+    }
+    #avatar {
+      background-color: $theme-color;
+      border-radius: 0.5em 0 0 0.5em;
+      height: 100%;
+      width: 7em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > img {
+        width: 4.5em;
+      }
+      @media screen and (min-width: $screen-md) {
+        width: 15em;
+        > img {
+          width: 10em;
+        }
+      }
+    }
+    #textArea {
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: $screen-md) {
+        font-size: 2em;
+      }
+    }
+    #rightUp {
+      background-color: $theme-color;
+      border-top-right-radius: 0.5em;
+      border-left: 1px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 100%;
+      color: white;
+      gap: 0.5em;
+      width: 10em;
+      > img {
+        width: 2.5em;
+      }
+    }
+    #rightDown {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      text-align: center;
+      color: $theme-type-color;
+      justify-content: center;
+      height: 100%;
+      padding: 0 0.5em;
+    }
+    #tableContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      .defineRow {
+        width: 25em;
+        background-color: $theme-color;
+        color: white;
+        padding: 0.5em;
+        margin: 2vh 0;
+      }
+      .ranking {
+        width: 3em;
+        text-align: center;
+      }
+      .partnerName {
+        width: 19em;
+      }
+      .units {
+        width: 5em;
+        text-align: center;
+      }
+    }
+  }
+}
+
+///////////////////////////
+/////// welcome ///////////
+///////////////////////////
+
+.welcome {
+  article {
+    padding: 0 2vw 0 2vw;
+    @media screen and (min-width: $screen-md) {
+      padding: 4vh 2vw 0 10vw;
+    }
+    @media screen and (min-width: $screen-lg) {
+      padding: 4vh 2vw 0 15vw;
+    }
+  }
+  @media screen and (max-width: $screen-md) {
+    overflow-x: scroll;
+  }
+  #welcomContentContainer {
+    min-height: 75vh;
+  }
+  #headergraphic {
+    border-top: solid 5px $theme-color;
+    border-bottom: solid 5px $theme-conter-color;
+    margin: 3em 0;
+    > img {
+      width: 15em;
+      margin: 3em 0 3em 1em;
+    }
+  }
+  #inputContainer {
+    width: 50vw;
+    @media screen and (max-width: $screen-xs-max) {
+      width: 90vw;
+    }
+    #sponsor {
+      padding: 0 0 0.5em 0.5em;
+    }
+    #inputContainerHeader {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      border: solid 1px lightgrey;
+      border-radius: 2px;
+      padding: 0.5em;
+      margin-bottom: 1em;
+      min-width: min-content;
+    }
+    #inputContainerFooter {
+      display: flex;
+      justify-content: end;
+      padding: 0 0.5em;
+      margin: 1em 0;
+    }
+    #InputContainerText {
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+    input#sponsorID {
+      max-width: 4em;
+      height: 1.5em;
+      font-size: 1em;
+      padding: 0 0.5em;
+      border: 0;
+      label {
+        width: 4em;
+        transform: translateY(-0.2em);
+        @media screen and (min-width: $screen-md) {
+          transform: translateY(-0.5em);
+        }
+      }
+    }
+    .inputArea {
+      display: flex;
+      #worldPicture > img {
+        width: 100%;
+      }
+      #landPicture > img {
+        width: 85%;
+      }
+      #inputTable {
+        font-size: 0.8em;
+        padding-left: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        select#inputSelect,
+        input {
+          margin: 1em 0;
+          background: white;
+          border-radius: 7px;
+          padding: 0.3em;
+        }
+      }
+    }
+  }
+  #inputContainerTable {
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 1em;
+    width: 50em;
+    @media screen and (max-width: $screen-xs-max) {
+      width: 40em;
+    }
+    .inputTableRow {
+      display: flex;
+      gap: 3em;
+      margin-bottom: 0.5em;
+      @media screen and (max-width: $screen-xs-max) {
+        gap: 0;
+      }
+      .leftRow,
+      .rightRow {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        > span.label {
+          width: 10em;
+          font-size: 0.6em;
+        }
+        select,
+        input {
+          // appearance: none;
+          // -webkit-appearance: none;
+          // -moz-appearance: none;
+          // appearance: none;
+          background-color: white;
+          color: black;
+          padding: 0.5em;
+          border-radius: 5px;
+          @media screen and (max-width: $screen-xs-max) {
+            max-width: 10em;
+          }
+          &:focus {
+            background-color: $theme-conter-color;
+            color: white;
+            &::placeholder {
+              color: white;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+      .birthDate,
+      #zip {
+        width: 4em;
+      }
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    }
+  }
+
+  #outputTable {
+    background-color: lightgray;
+    border: $theme-conter-color solid 5px;
+    border-radius: 10px;
+    padding: 1em;
+    width: 40em;
+    @media screen and (max-width: $screen-xs-max) {
+      width: 30em;
+    }
+    .outputTableRow {
+      display: flex;
+      gap: 3em;
+      margin-bottom: 0.5em;
+      @media screen and (max-width: $screen-xs-max) {
+        gap: 0;
+      }
+      .outputName {
+        width: 10em;
+      }
+      div > span#street {
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
+///////////////////////////
+////// Kategorie //////////
+///////////////////////////
+
+.auftragsverwaltung {
+  #startBlock1 {
+    min-height: 75vh;
+    #customerDataContainer {
+      select {
+        padding: 0.5em;
+      }
+      input {
+        padding: 0.5em;
+      }
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      padding: 0.5em;
+      .row {
+        display: flex;
+        gap: 0.2em;
+      }
+      #customerData {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        .label {
+          width: 4em;
+        }
+      }
+      #contractColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+      }
+      #filterColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+    #answerContainer {
+      background-color: beige;
+      padding: 1em;
+      margin: 0.5em;
+      border-left: 4px solid #fa8b19;
+    }
+    #buttonRow {
+      display: flex;
+      gap: 0.2em;
+      > div {
+        width: 8em;
+        padding: 1em;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 1em 0;
+      }
+      #buttonGreen {
+        background-color: #0ef20e;
+      }
+      #buttonBlack {
+        background-color: black;
+      }
+    }
+  }
+}
+
+///////////////////////////
+/////// Finanzen //////////
+///////////////////////////
+
+/** Aktuelle Provisionen */
+
+.provisionen {
+  #contentContainer {
+    min-height: 75vh;
+  }
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+    #teamContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      @media screen and (max-width: $screen-sm-max) {
+        justify-items: center;
+      }
+      @media screen and (min-width: $screen-md) {
+        grid-template-columns: 1fr 1fr;
+        gap: 1vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1vw;
+      }
+      .cards {
+        @media screen and (max-width: $screen-sm-max) {
+          width: 80%;
+          margin-bottom: 2vh;
+        }
+      }
+      #userOwnCommission {
+        background-color: #00beff;
+      }
+      #userOwnSaldo {
+        background-color: #ff6364;
+      }
+      #futureCommission {
+        background-color: #ffc000;
+      }
+      #userOwnCommission,
+      #futureCommission {
+        display: grid;
+        align-items: end;
+        grid-template-rows: 5vh 10vh 9vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "header header header graphics"
+          "total total total graphics"
+          "commission commission commission commission";
+        padding: 1vw;
+        border-radius: 5px;
+        color: white;
+        .header {
+          grid-area: header;
+          align-self: start;
+        }
+      }
+      #userOwnSaldo {
+        display: grid;
+        align-items: end;
+        grid-template-rows: 5vh 10vh 9vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "total total total graphics"
+          "button button button graphics"
+          "header header header header";
+        padding: 1vw;
+        border-radius: 5px;
+        color: white;
+        .header {
+          grid-area: header;
+          border-top: solid 1px white;
+          padding-top: 2vh;
+          align-self: center;
+        }
+        #callCommisionQuery {
+          grid-area: button;
+          align-self: start;
+          background-color: white;
+          color: red;
+          padding: 0.5em;
+          width: max-content;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .gesamt {
+          grid-area: total;
+          align-self: start;
+        }
+      }
+      .graphics {
+        grid-area: graphics;
+        align-self: center;
+        justify-self: center;
+        > img {
+          width: 3em;
+        }
+        > svg {
+          width: 3em;
+        }
+      }
+      .total {
+        grid-area: total;
+      }
+      .commission {
+        grid-area: commission;
+        border-top: solid 1px white;
+        padding-top: 2vh;
+      }
+      .childCom {
+        grid-area: childCom;
+        border-top: solid 1px white;
+        padding-top: 2vh;
+      }
+      .cardText {
+        font-size: 2.5vw;
+        @media screen and (min-width: $screen-sm) {
+          font-size: 0.8vw;
+        }
+        margin-right: 1em;
+      }
+    }
+    #tableContainer {
+      padding: 1em 0;
+      border: 1px solid grey;
+      #commissionTable {
+        margin-bottom: 1em;
+        .TableRow {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          border: solid 1px rgb(106, 73, 214);
+          &.first {
+            background-color: #e9ebf5; // hellgrau
+          }
+          &.second {
+            background-color: #cfd5ea; // blaugrau
+          }
+          .text {
+            padding-left: 0.5em;
+            flex: 3;
+          }
+          .value {
+            > input[type="number" i] {
+              // appearance: none;
+              border-left: solid 1px rgb(106, 73, 214);
+              border-right: solid 1px rgb(106, 73, 214);
+              background-color: #cfd5ea;
+              height: 3em;
+              font-size: 1em;
+              text-align: center;
+            }
+            flex: 1;
+          }
+          .sendButton {
+            flex: 1;
+          }
+          #commissionQueryButton {
+            background-color: rgb(44, 238, 44);
+            color: white;
+            width: 10em;
+            padding: 0.5em;
+            margin: 0 1em;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+      }
+      #commissionHistoryTable {
+        display: table;
+        margin: 1em 0;
+        > div:nth-of-type(odd) {
+          background: #e9ebf5; // hellgrau
+          color: black;
+        }
+        > div:nth-of-type(even) {
+          background: #cfd5ea; // blaugrau
+          color: black;
+        }
+        .TableRow {
+          /* display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          border: solid 1px rgb(106, 73, 214); */
+          &.headline {
+            background-color: $theme-color;
+            color: white;
+            margin-top: 2vh;
+            > div {
+              padding: 0.5vw;
+            }
+          }
+          .id {
+            width: 6vw;
+          }
+          .status {
+            min-width: 14vw;
+            max-width: 20em;
+            font-size: 0.6em;
+            padding: 0.5em;
+            height: 2em;
+            > button {
+              font-size: inherit;
+              border: none;
+              background-color: #ffc000;
+              color: white;
+              text-align: center;
+              padding: 0.5em;
+              border-radius: 5px;
+            }
+          }
+          .value {
+            width: 4vw;
+          }
+          .currency {
+            width: 5vw;
+          }
+          .queryTime {
+            width: 20em;
+          }
+          .payTime {
+            width: 12vw;
+          }
+          .document {
+            width: 15vw;
+            & > a,
+            &:active,
+            &:hover,
+            &:focus {
+              color: black;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    #headline {
+      background-color: $theme-type-color;
+      color: white;
+      text-align: center;
+      padding: 0.5em;
+    }
+    #flexRow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      padding-top: 0.5em;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    .tableRow {
+      display: flex;
+      justify-content: space-between;
+      gap: 5em;
+      @media screen and (min-width: $screen-md) {
+        gap: 4em;
+      }
+      @media screen and (min-width: $screen-lg) {
+        gap: 2em;
+      }
+      @media screen and (min-width: $screen-xl) {
+        gap: 8em;
+      }
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .caption {
+        padding: 1em 0 0.5em 0;
+      }
+    }
+    #lowerHeadline {
+      text-align: center;
+      color: $theme-type-color;
+      padding: 1em 0;
+      margin: 0.5em 0;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+    }
+    #lowerFlexRow {
+      display: flex;
+      justify-content: space-around;
+      gap: 1em;
+      @media screen and (max-width: $screen-xs-max) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .lowerCard {
+        padding: 1em 3em;
+        width: 15em;
+        min-height: 4em;
+        @media screen and (max-width: $screen-xs-max) {
+          width: 10em;
+        }
+        .TableRow {
+          margin-bottom: 1em;
+        }
+      }
+    }
+    #buttonColumn {
+      padding: 0.5em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .button {
+        padding: 0.3em 3em;
+        margin: 0.3em 0;
+        width: 8em;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+        &.activ {
+          background-color: $theme-type-color;
+          color: white;
+        }
+        &.inactiv {
+          background-color: #f2f2f2;
+          color: grey;
+        }
+      }
+    }
+    .materialCard {
+      border: 1px solid gray;
+      border-radius: 3px;
+      padding: 0.5em;
+      min-height: 12em;
+      color: $theme-color;
+      .spacer {
+        height: 2em;
+        margin-top: 0.5em;
+        border-top: 1px solid gray;
+      }
+    }
+    #commissionFooter {
+      display: flex;
+      justify-content: center;
+      margin-top: 1em;
+      .button {
+        background-color: $theme-color;
+        color: white;
+        padding: 0.5em 3em;
+        margin: 0.3em 0;
+        width: 15em;
+        border-radius: 6px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+  align-items: center;
+}
+.right {
+  text-align: right;
+}
+
+.saldoMitteilung {
+  #contentContainer {
+    min-height: 75vh;
+    #firstLine {
+      background-color: $theme-color;
+      color: white;
+      text-align: center;
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+    .table {
+      width: 100%;
+      .period {
+        width: 35%;
+      }
+      .type {
+        width: 20%;
+      }
+      .number {
+        width: 25%;
+      }
+      .icon {
+        width: 20%;
+        > div {
+          display: flex;
+          justify-content: start;
+          > img {
+            max-width: 2em;
+            padding: 0.3em 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-xs) {
+}
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+@media screen and (min-width: $screen-xl) {
+}
+
+///////////////////////////
+////// Dashboard //////////
+//// Kundenbereich ////////
+///////////////////////////
+
+.dashboard {
+  #infoCenter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    .infoContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 1vw;
+      text-align: center;
+      background-color: #00b0f0;
+      color: white;
+      border-radius: 5px;
+      padding: 1vw;
+      width: 95vw;
+      height: min-content;
+      cursor: pointer;
+      @media screen and (min-width: $screen-sm) {
+        width: 45vw;
+        gap: 3vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        width: 45%;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 20%;
+        gap: 2vw;
+      }
+      @media screen and (min-width: $screen-xl) {
+        font-size: 1.3em;
+      }
+      .infoContainerTop {
+        min-height: 3.5em;
+      }
+      .infoContainerMiddle {
+        font-size: 1.5em;
+        min-height: 2.5em;
+        span#walletEuro {
+          font-size: 0.7em;
+        }
+      }
+      .infoContainerBottom {
+        min-height: 3.5em;
+      }
+    }
+  }
+  #tableContainer {
+    .order_type {
+      width: 8em;
+    }
+    .order_dealer {
+      width: 8em;
+    }
+    .order_product {
+      width: 9em;
+    }
+    .order_date {
+      width: 7em;
+    }
+    .order_start {
+      width: 7em;
+    }
+    .contract_document {
+      width: 9em;
+    }
+    .order_fault {
+      width: 12em;
+    }
+  }
+}
+
+///////////////////////////
+//////// News /////////////
+///////////////////////////
+
+// Tabelle wird über tables.scss gesteuert
+.news {
+  .datum {
+    text-align: right;
+  }
+}
+
+///////////////////////////
+///// Angebot holen ///////
+///////////////////////////
+
+.angebot-holen {
+  #buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+    > div {
+      width: 95vw;
+      padding: 1em;
+      color: white;
+      margin-bottom: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      @media screen and (min-width: $screen-xs) {
+        width: 35vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        width: 30vw;
+      }
+      @media screen and (min-width: 1024px) {
+        width: 12vw;
+      }
+    }
+    #power {
+      background-color: gold;
+      text-shadow: brown 1px 1px 5px;
+    }
+    #dsl {
+      background-color: $theme-conter-color;
+      text-shadow: brown 1px 1px 5px;
+    }
+    #mobile {
+      background-color: #00cdff;
+    }
+    #solar {
+      background-color: green;
+    }
+  }
+  #answer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #alert1 {
+      width: 15em;
+      padding: 1em;
+      background-color: lightgrey;
+      border: solid 1px #00cdff;
+      border-radius: 5px;
+      #text {
+        text-align: center;
+      }
+      #buttonRow {
+        display: flex;
+        justify-content: space-around;
+        gap: 1em;
+        margin-top: 1em;
+        > div {
+          padding: 0.5em;
+          border-radius: 5px;
+          text-align: center;
+          color: white;
+          margin-bottom: 0.5em;
+          cursor: pointer;
+        }
+        #cancel {
+          background-color: red;
+        }
+        #accept {
+          background: green;
+        }
+      }
+    }
+  }
+  #alert2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 17em;
+    height: 15em;
+    padding: 1em;
+    background-color: lightgrey;
+    border: solid 1px #00cdff;
+    border-radius: 5px;
+    img {
+      width: 5em;
+    }
+  }
+}
+
+///////////////////////////
+///// Optimierung /////////
+///////////////////////////
+
+.optimierung {
+  #buttonContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+    a,
+    a:hover,
+    a:visited,
+    a:focus {
+      text-decoration: none;
+    }
+    div {
+      width: 95vw;
+      padding: 1em;
+      color: white;
+      margin-bottom: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      @media screen and (min-width: $screen-xs) {
+        width: 35vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        width: 30vw;
+      }
+      @media screen and (min-width: 1024px) {
+        width: 12vw;
+      }
+    }
+    #power {
+      background-color: gold;
+      text-shadow: brown 1px 1px 5px;
+    }
+    #dsl {
+      background-color: $theme-conter-color;
+      text-shadow: brown 1px 1px 5px;
+    }
+    #mobil {
+      background-color: #00cdff;
+    }
+  }
+}
+
+///////////////////////////
+///// Stromrechner ////////
+///////////////////////////
+
+.stromRechnerCustomer {
+  #startBlock1 {
+    #firstCompareLine {
+      display: flex;
+      flex-wrap: wrap;
+      height: min-content;
+      justify-content: space-between;
+      position: relative;
+      #compareResults {
+        padding: 1em 0;
+      }
+    }
+    #comparePowerContainer {
+      .responseContainer {
+        border: lightgreen 1px solid;
+        border-radius: 8px;
+        margin: 1em 0;
+        padding: 1em;
+        @media screen and (min-width: $screen-sm) {
+          width: 100%;
+        }
+        .responseUpperLine {
+          display: flex;
+          flex-wrap: nowrap;
+          .logo {
+            flex: 2;
+            img {
+              height: 2em;
+            }
+          }
+          .supplier_tariff {
+            flex: 2;
+            font-weight: bold;
+          }
+          .supplier_monthlyFee {
+            flex: 2;
+            text-align: right;
+          }
+        }
+        .offerData {
+          display: flex;
+          justify-content: space-between;
+          > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 0.4em;
+          }
+          .left {
+            text-align: left;
+          }
+          .right {
+            text-align: right;
+          }
+          .small {
+            font-size: 0.7em;
+          }
+          .specialItem > img {
+            width: 1em;
+          }
+          .orderButton {
+            background-color: green;
+            color: white;
+            padding: 0.5em;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  #powerContainer {
+    display: grid;
+    @media screen and (min-width: $screen-lg) {
+      grid-template-columns: 2fr 3fr;
+      gap: 1vw;
+    }
+    h2 {
+      font-size: 11vw;
+      @media screen and (min-width: $screen-xs) {
+        font-size: 9.5vw;
+      }
+      @media screen and (min-width: $screen-sm) {
+        font-size: 8vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        font-size: 6vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        font-size: 2.5vw;
+      }
+    }
+  }
+  #offerContainer {
+    // Angebotsaufnahme Strom und Gas
+    padding-left: 0.4em;
+    @media screen and (min-width: $screen-md) {
+      padding-left: 1em;
+    }
+    .buttonTable {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 1em 0;
+      gap: 1vw;
+      div.auswahlbutton {
+        cursor: pointer;
+      }
+      @media screen and (min-width: $screen-md) {
+        width: 50vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 25vw;
+      }
+      .auswahlbutton {
+        display: flex;
+        align-items: center;
+        color: $theme-color;
+        flex-direction: column;
+        width: 7em;
+        padding: 0.7em;
+        box-shadow: grey 1px 1px 3px;
+        border-radius: 5px;
+        > svg {
+          width: 3em;
+          stroke-width: 2;
+        }
+        > div.auswahlbuttonText {
+          font-size: 0.7em;
+        }
+        &.activ {
+          // wird per JS auf die aktive Auswahl gesetzt
+          border: $theme-color solid 3px;
+        }
+      }
+    }
+    .inputContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 1em;
+      gap: 1em;
+      width: 95vw;
+      @media screen and (min-width: 900px) {
+        width: 50vw;
+        margin: 0.5em 0;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 25vw;
+        margin: 0.5em 0;
+      }
+    }
+    .selectListe {
+      background: white;
+      border-radius: 3px;
+      width: 9em;
+    }
+    #personenContainer {
+      // Auswahl der Personenanzahl im Stromrechner
+      display: flex;
+      width: 8em;
+      justify-content: space-around;
+      > div > svg {
+        // Die Männchen
+        stroke-width: 3;
+        color: $theme-color;
+        width: 8vw;
+        @media screen and (min-width: $screen-xs) {
+          width: 3.5vw;
+        }
+        @media screen and (min-width: $screen-md) {
+          width: 3vw;
+        }
+        @media screen and (min-width: $screen-lg) {
+          width: 2vw;
+        }
+      }
+      > div.persons {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        font-size: 0.8em;
+        color: $theme-color;
+        &.activ > svg {
+          fill: $theme-color;
+        }
+      }
+    }
+    div.tableHead {
+      font-size: 4vw;
+      margin-bottom: 0.5em;
+      @media screen and (min-width: 500px) {
+        font-size: 0.7em;
+      }
+    }
+    #lastRow {
+      display: flex;
+      padding-bottom: 1em;
+      gap: 2em;
+      width: 95vw;
+      @media screen and (min-width: 900px) {
+        width: 50vw;
+        margin: 0.5em 0;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: 25vw;
+        margin: 0.5em 0;
+      }
+      #fireButton {
+        margin-top: 0;
+      }
+    }
+  }
+  #compareContainer {
+    // Ausgabebereich Strom und Gas
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    #firstCompareLine {
+      display: flex;
+      flex-wrap: wrap;
+      height: min-content;
+      justify-content: space-between;
+      position: relative;
+      #compareResults {
+        padding: 1em 0;
+      }
+    }
+    h2 {
+      margin: 0;
+      font-size: 10vw;
+      @media screen and (min-width: $screen-sm) {
+        font-size: 7.5vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        font-size: 5.5vw;
+      }
+      @media screen and (min-width: $screen-lg) {
+        font-size: 2.5vw;
+      }
+    }
+    #compareContent {
+      display: flex;
+      flex-direction: column;
+    }
+    #billingContainer {
+      #billLoadRow {
+        #uploadform {
+          display: flex;
+          flex-direction: column;
+          input[type="file" i] {
+            width: 30em;
+          }
+        }
+        #result {
+          margin: 1em 0;
+          span.done {
+            background-color: green;
+            padding: 0.5em;
+            border-radius: 5px;
+            color: white;
+          }
+        }
+        #billLoadButton {
+          background-color: $theme-color;
+          color: white;
+          width: 10em;
+          padding: 0.5em;
+          margin: 1em 0;
+          border-radius: 5px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+      #billOutputContainer {
+        min-height: 40vh;
+        #billOutputTable {
+          // grundsätzliches Design wird über tables formatiert
+          margin: 1em 0;
+          width: 100%;
+          .billName {
+            display: flex;
+            padding: 0.5em;
+            a,
+            a:hover,
+            a:visited,
+            a:focus {
+              text-decoration: none;
+            }
+          }
+          .billDate {
+            width: 10em;
+          }
+        }
+      }
+    }
+    #comparePowerContainer {
+      .responseContainer {
+        border: lightgreen 1px solid;
+        border-radius: 8px;
+        margin: 1em 0;
+        padding: 1em;
+        @media screen and (min-width: $screen-sm) {
+          width: 100%;
+        }
+        .responseUpperLine {
+          display: flex;
+          flex-wrap: nowrap;
+          .logo {
+            flex: 2;
+            img {
+              height: 2em;
+            }
+          }
+          .supplier_tariff {
+            flex: 2;
+            font-weight: bold;
+          }
+          .supplier_monthlyFee {
+            flex: 2;
+            text-align: right;
+          }
+        }
+        .offerData {
+          display: flex;
+          justify-content: space-between;
+          > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 0.4em;
+          }
+          .left {
+            text-align: left;
+          }
+          .right {
+            text-align: right;
+          }
+          .small {
+            font-size: 0.7em;
+          }
+          .specialItem > img {
+            width: 1em;
+          }
+          .orderButton {
+            background-color: green;
+            color: white;
+            padding: 0.5em;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  #startOrderContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    #firstLine {
+      color: #7fc579;
+      img {
+        height: 1em;
+      }
+    }
+    .dataContainer {
+      #nameContainer {
+        display: flex;
+        gap: 0.5em;
+        flex-direction: column;
+        .topLine {
+          font-size: 1.5em;
+          margin: 0.5em 0;
+        }
+        #sendButton {
+          background-color: $theme-color;
+          color: white;
+          width: 10em;
+          padding: 0.5em;
+          margin: 1em 2em;
+          border-radius: 5px;
+          text-align: center;
+          cursor: pointer;
+        }
+        #appendText {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////
+///// Controlling /////////
+///////////////////////////
+
+#monthlyBilling {
+  background-color: green;
+  color: white;
+  padding: 0.5em;
+  margin: 1em 2em;
+  width: 15em;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  &.done {
+    background-color: lightgrey;
+    color: black;
+    cursor: default;
+  }
+}
+#topSectionControlling {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  #logoContainer > img {
+    width: 8em;
+    transform: translate(3em);
+    margin-right: 16em;
+  }
+  #controllingTopSection {
+    font-size: 3em;
+    color: $theme-type-color;
+    font-weight: bold;
+  }
+}
+#introContractControlling {
+  margin-bottom: 2em;
+  #buttonAccept {
+    background-color: green;
+    color: white;
+    padding: 0.5em;
+    margin: 1em 2em;
+    width: 9em;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #answerText {
+    margin: 1em;
+  }
+}
+#contractTable {
+  .linkable {
+    cursor: pointer;
+  }
+  .order_type {
+    width: 4em;
+  }
+  .order_status {
+    width: 3em;
+  }
+  .order_id {
+    width: 5em;
+  }
+  .user_id {
+    width: 6em;
+  }
+  .customer_name {
+    width: 10em;
+  }
+  .order_product {
+    width: 6em;
+  }
+  .order_dealer {
+    width: 5em;
+  }
+  .order_date {
+    width: 7em;
+  }
+  .order_start {
+    width: 6em;
+  }
+  .order_fault {
+    width: 11em;
+  }
+}
+#contractContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em;
+  .row {
+    display: flex;
+    gap: 0.5em;
+  }
+}
+
+///////////////////////////
+//////// Profil ///////////
+///////////////////////////
+
+.profil {
+  #inputContainerTable {
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 1em;
+    width: 50em;
+    @media screen and (max-width: $screen-xs-max) {
+      width: 40em;
+    }
+    .inputTableRow {
+      display: flex;
+      gap: 3em;
+      margin-bottom: 0.5em;
+      @media screen and (max-width: $screen-xs-max) {
+        gap: 0;
+      }
+      .leftRow,
+      .rightRow {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        > span.label {
+          width: 10em;
+          font-size: 0.6em;
+        }
+        select,
+        input {
+          // appearance: none;
+          background-color: white;
+          color: black;
+          padding: 0.5em;
+          border-radius: 5px;
+          @media screen and (max-width: $screen-xs-max) {
+            max-width: 10em;
+          }
+          &:focus {
+            background-color: $theme-conter-color;
+            color: white;
+            &::placeholder {
+              color: white;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////
+////// Downloads //////////
+///////////////////////////
+
+.downloads {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+  }
+}
+///////////////////////////
+////////// FAQ ////////////
+///////////////////////////
+
+.faq {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+    .banner {
+      transform: rotate(-20deg);
+      width: 15em;
+      @media screen and (min-width: $screen-xs) {
+        width: 20em;
+      }
+      @media screen and (min-width: $screen-sm) {
+        width: 30vw;
+      }
+    }
+  }
+}
+///////////////////////////
+//////// Support //////////
+///////////////////////////
+
+.support {
+  div#startBlock1 {
+    min-height: 75vh;
+    padding: 1vw;
+    .banner {
+      transform: rotate(-20deg);
+      width: 15em;
+      @media screen and (min-width: $screen-xs) {
+        width: 20em;
+      }
+      @media screen and (min-width: $screen-sm) {
+        width: 30vw;
+      }
+    }
+  }
+}
+
+///////////////////////////
+///// Impressum  //////////
+///////////////////////////
+
+.impressum {
+  article {
+    margin-top: 4em;
+  }
+}
+
+///////////////////////////
+///// Datenschutz /////////
+///////////////////////////
+
+.datenschutz {
+  article {
+    margin: 0 10vw;
+    @media screen and (max-width: $screen-sm-max) {
+      margin: 0 2vw;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+      margin: 0 2vw;
+      margin-left: 5vw;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (max-width: $screen-xs-max) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  // zweispaltig
+}
+
+///////////////////////////
+////// Kategorie //////////
+///////////////////////////

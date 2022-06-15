@@ -1,0 +1,35 @@
+{
+    "news":[
+        {
+            "newsDate": "01.10.2021",
+            "newsTheme":"Absofort Callback bei Netto-Online",
+            "link":"Allgemeine_Bavaria_lipsum.pdf"
+        },
+        {
+            "newsDate": "15.10.2021",
+            "newsTheme":"Neuer Spartarif mit Vodafone",
+            "link":"Allgemeine_Bavaria_lipsum.pdf"
+        },
+        {
+            "newsDate": "19.10.2021",
+            "newsTheme":"Preiserhöhung bei den Grundversorgern",
+            "link":"Allgemeine_Bavaria_lipsum.pdf"
+        },
+        {
+            "newsDate": "05.11.2021",
+            "newsTheme":"Unsere neue Mitarbeiterin",
+            "link":"Allgemeine_Bavaria_lipsum.pdf"
+        },
+        {
+            "newsDate": "23.11.2021",
+            "newsTheme":"Testimonial neuer Kunden verfügbar",
+            "link":"Allgemeine_Bavaria_lipsum.pdf"
+        },
+        {
+            "newsDate": "02.12.2021",
+            "newsTheme":"Mediamarkt in der Online-Shoppingwelt",
+            "link":"Allgemeine_Bavaria_lipsum.pdf"
+        }
+    ],
+    "news-link":"media/users/news/"
+}

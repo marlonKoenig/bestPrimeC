@@ -1,0 +1,20 @@
+{
+  "teamTotalCustomers": 150,
+  "teamElectricityCustomers": 30,
+  "teamMobileCommunicationCustomers": 30,
+  "teamAppCustomers": 30,
+  "teamDslCustomers": 30,
+  "teamGasCustomers": 30,
+  "ownTotalCustomers": 50,
+  "ownElectricityCustomers": 10,
+  "ownMobileCommunicationCustomers": 10,
+  "ownAppCustomers": 10,
+  "ownDslCustomers": 10,
+  "ownGasCustomers": 10,
+  "totalCustomers": 200,
+  "totalElectricityCustomers": 40,
+  "totalMobileCommunicationCustomers": 40,
+  "totalAppCustomers": 40,
+  "totalDslCustomers": 40,
+  "totalGasCustomers": 40
+}

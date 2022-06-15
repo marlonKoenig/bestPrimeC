@@ -1,0 +1,33 @@
+/*!
+ * Holzland 2.0
+ * Copyright 2021 Erdinger-WebDesign.de
+ * Licensed under MIT
+ * Template CSS for Template "Holzland"
+ */
+@charset 'utf-8';
+
+// Core variables and mixins
+@import "variables";
+@import "basics"; // Grundeinstellungen für Umbrüche und Anderes
+@import "fonts"; // Core CSS*/
+// @import "type";
+// @import "grid";
+// @import "aside";
+@import "buttons";
+// @import "animationen";
+// Components
+// @import "glyphicons";
+// @import "header"; // Kopfbereich allgemein
+// @import "slider"; // Bewegtbildim Kopfber eich
+// @import "lightbox"; // Imagelightbox
+// @import "kontakt"; //
+// @import "portfolio"; //
+//@import "nav-main"; // Enthält meine komplette Navigation -> mehrdimensional
+@import "nav-aside"; // Enthält meine Seitennavigation
+@import "footer"; // ist im Einsatz
+
+@import "tables"; // Tabellen im Grid-Format //
+@import "datenschutz";
+// Kundenbereich
+@import "additionalClasses"; // spezielle Bereiche für Zusatzmodule
+@import "theme"; // spezielle Hacks für einzelne Kunden

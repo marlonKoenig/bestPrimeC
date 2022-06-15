@@ -1,0 +1,101 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/**************************************************************************************************************************************************
+INHALTE DIESER DATEI
+
+?. Text-Align
+?. Display
+
+
+/**************************************************************************************************************************************************
+Text-Align
+**************************************************************************************************************************************************/
+.textAlignCenter {
+  text-align: center !important;
+}
+
+/**************************************************************************************************************************************************
+Display
+**************************************************************************************************************************************************/
+.displayNone {
+  display: none;
+}
+
+/**************************************************************************************************************************************************
+margin
+**************************************************************************************************************************************************/
+.marginBottomSmall {
+  margin-bottom: 1rem !important;
+}
+.marginTopMedium {
+  margin-top: 2rem !important;
+}
+.marginRightMedium {
+  margin-right: 2rem;
+}
+.marginLeftMedium {
+  margin-left: 2rem;
+}
+.marginTopBig {
+  margin-top: 5rem !important;
+}
+.marginVerticalSmall {
+  margin: 1rem 0 !important;
+}
+.marginNone {
+  margin: 0;
+}
+.marginTopNone {
+  margin-top: 0;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/**************************************************************************************************************************************************
+Flex
+**************************************************************************************************************************************************/
+@mixin flexRow($importance: "") {
+  display: -webkit-box #{$importance};
+  display: -ms-flexbox #{$importance};
+  display: flex #{$importance};
+  -webkit-box-orient: horizontal #{$importance};
+  -webkit-box-direction: normal #{$importance};
+  -ms-flex-direction: row #{$importance};
+  flex-direction: row #{$importance};
+  -webkit-box-align: center #{$importance};
+  -ms-flex-align: center #{$importance};
+  align-items: center #{$importance};
+}
+.flex-row {
+  @include flexRow;
+}
+
+.width50Prc {
+  width: 50%;
+}
+
+.fontSizeLarge {
+  font-size: 2em;
+}
+.fontSizeMedium {
+  font-size: 1.3em;
+}
+
+.backgroundDark {
+  background: #475468 !important;
+}

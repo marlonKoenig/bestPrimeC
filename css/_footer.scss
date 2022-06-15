@@ -1,0 +1,54 @@
+
+///////////////////////////
+/////// Top-Link //////////
+///////////////////////////
+
+section.back-to-top{
+  text-align: center;
+  font-size: 1.5em;
+  #backTopLink {
+    font-size: 24px;
+    color: #dd1738;
+  }
+}
+
+
+///////////////////////////
+//////// Footer ///////////
+///////////////////////////
+
+.footer {
+  //min-height: 15rem;
+  background: $footer-color;
+  margin-top: 5rem;
+  color: white;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.footer a {
+  background: transparent;
+  color: white;
+  &:visited{
+    color: white;
+  }
+}
+.footer a:hover {
+  background: transparent;
+  color: $theme-conter-color;
+  text-decoration: none;
+}
+.copyLine {
+  display: flex;
+  flex-direction: row;
+  font-size: calc(0.5rem + 1vw);
+  width: 100%;
+  padding: 1em 0 1em 1em;
+  flex-wrap: wrap;
+}
+.copyright, .designer {
+  margin-left: 2em;
+  a, a:visited, a:hover{
+    color: white;
+  }
+}

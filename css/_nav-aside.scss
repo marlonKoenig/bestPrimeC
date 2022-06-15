@@ -1,0 +1,449 @@
+///////////////////////////
+///// Top-Section /////////
+///////////////////////////
+
+#topSection {
+  position: fixed;
+  top: 0;
+  display: grid;
+  align-items: center;
+  @media screen and (max-width: $screen-sm-max) {
+    grid-template-columns: 1fr 2fr;
+  }
+  @media screen and (min-width: $screen-md) {
+    grid-template-rows: 2fr 3fr;
+  }
+  background-color: white;
+  color: $theme-type-color;
+  padding-bottom: 0.5em;
+  width: 100vw;
+  z-index: 1;
+  > a {
+    align-self: center;
+  }
+  img.logo {
+    width: 8em;
+    transform: translate(1em, 1.2em);
+    @media screen and (max-width: $screen-sm-max) {
+      width: 5em;
+      transform: translate(0.5em, 0);
+    }
+  }
+  #karriereContainer,
+  #consultantContainer {
+    background-color: $theme-conter-color;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.7em;
+    margin-right: 1em;
+    padding: 1em;
+    width: 18em;
+    color: white;
+    @media screen and (max-width: $screen-sm-max) {
+      margin-left: -8vw;
+      margin-top: 0.9vh;
+      font-size: 0.4em;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+      margin-top: 0.5em;
+      margin-left: 1.5vw;
+    }
+  }
+  #consultantContainer {
+    @media screen and (min-width: $screen-sm) {
+      margin-left: 6em;
+    }
+  }
+  #karriereStufe,
+  #customer_dealerName {
+    font-size: 1.5em;
+  }
+  #topNavi {
+    display: none;
+    & > div > a {
+      color: $theme-color;
+    }
+  }
+  @media screen and (min-width: $screen-sm) {
+    grid-template-columns: 2fr 3fr;
+    max-height: 12vh;
+  }
+  @media screen and (min-width: $screen-md) {
+    grid-template-columns: 2fr 2fr 6fr;
+    padding: 2vh 2vw;
+    width: 96vw;
+    #topNavi {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      background: white;
+      width: 100%;
+      margin-top: 1em;
+      text-align: center;
+      height: 3.5em;
+      > div.current > a {
+        color: $theme-type-color;
+        font-weight: bold;
+      }
+    }
+  }
+  #buttonRow {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    bottom: 3em;
+    @media screen and (min-width: 600px) and (max-width: $screen-sm-max) {
+      padding-left: 2em;
+    }
+    a#viewAdvisor {
+      &:hover,
+      &:visited,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+    div.advisorButton {
+      background-color: #00cdff;
+      color: white;
+      padding: 0.5em;
+      width: 10em;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      &.disabled {
+        background-color: lightgrey;
+        color: black;
+      }
+    }
+  }
+}
+
+///////////////////////////
+/////// Side-Menu /////////
+///////////////////////////
+
+#smartLogo {
+  display: none;
+  opacity: 0;
+  margin-bottom: 1em;
+  > img.logo {
+    width: 70vw;
+    padding-left: 5vw;
+  }
+}
+
+nav {
+  @media screen and (min-width: $screen-md) {
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    z-index: 1;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    height: 4.5em;
+    font-size: 1.4em;
+    .topNavi {
+      display: none;
+    }
+  }
+}
+.nav-list {
+  margin: 0;
+  font-size: 0.7em;
+  > a {
+    color: gray;
+  }
+  #marketingList,
+  #finanzList {
+    position: relative;
+    div {
+      display: none;
+      position: relative;
+      //left: 1vw;
+      @media screen and (min-width: $screen-sm) {
+        left: 2vw;
+      }
+      @media screen and (min-width: $screen-md) {
+        left: 1vw;
+      }
+      > a {
+        text-decoration: none;
+        color: grey;
+        cursor: pointer;
+        display: block;
+        padding: 0.2em 10vw;
+        transition: all 0.3s ease-in-out;
+        @media screen and (min-width: $screen-sm) {
+          padding: 0.5em 3em;
+        }
+        &:visited {
+          color: grey;
+        }
+      }
+      &.open {
+        display: block;
+        ~ div {
+          display: block;
+        }
+      }
+    }
+    &.open div {
+      display: block;
+    }
+    > div.current > a {
+      color: $theme-type-color;
+    }
+  }
+  > div.current > a {
+    color: $theme-type-color;
+    font-weight: bold;
+  }
+  #ownIdContainer {
+    background-color: $theme-conter-color;
+    color: white;
+    width: 12em;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 1em;
+    text-align: center;
+    @media screen and (min-width: $screen-sm) {
+    }
+    @media screen and (max-width: $screen-xs-max) {
+    }
+  }
+}
+
+.nav-list > div > a {
+  color: gray;
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 0.2em 5vw;
+  }
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  padding: 0.5em 3em;
+  transition: all 0.3s ease-in-out;
+}
+.nav-list > div.disabled > a {
+  color: lightgrey;
+  &:hover {
+    color: lightgrey;
+  }
+  &:visited {
+    color: lightgrey;
+  }
+}
+.canceld {
+  display: none;
+}
+
+/* burger, menu-check*/
+.burger,
+.menu-check {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  nav {
+    padding: 0 1em;
+  }
+  nav ul li {
+    margin: 0 0.25em;
+  }
+  nav ul li a {
+    padding: 0.5em 0.5em;
+  }
+  .nav-white {
+    ul li {
+      margin: 0 0.25em;
+    }
+    a {
+      padding: 0.5em 0.5em;
+    }
+  }
+}
+
+///////////////////////////
+///// Smart-Phone /////////
+///////////////////////////
+
+@media screen and (max-width: $screen-sm-max) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 15;
+    .nav-list {
+      overflow-y: scroll;
+      display: none;
+      opacity: 0;
+    }
+  }
+  #checkBoxMenu:checked ~ .nav-list {
+    pointer-events: auto;
+    display: block;
+    opacity: 1;
+    background-color: white;
+    > div#smartLogo {
+      display: block;
+      opacity: 1;
+    }
+  }
+  .burger span {
+    padding: 0.15em 1.3em;
+    background: black;
+    margin: 0.4em 0;
+    display: block;
+    transition: all 0.4s ease;
+    border-radius: 15%;
+  }
+  .burger {
+    display: block;
+    z-index: 15;
+    position: absolute;
+    right: 4vw;
+  }
+
+  .menu-check {
+    display: block;
+    position: absolute;
+    right: 1vw;
+    width: 6em;
+    height: 5em;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 16;
+  }
+
+  .menu-check:checked ~ .burger span:nth-child(1) {
+    transform: translateY(23px) rotate(135deg);
+  }
+  .menu-check:checked ~ .burger span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-check:checked ~ .burger span:nth-child(3) {
+    transform: translateY(-5px) rotate(-135deg);
+  }
+  a:hover {
+    background: white;
+  }
+  a {
+    outline: none;
+  }
+  nav span a {
+    background: transparent;
+  }
+
+  .nav-list {
+    font-size: 1.2em;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    padding-top: 0.5em;
+    transition: all 0.3s ease-in-out;
+    > div > a {
+      color: gray;
+    }
+    li {
+      transform: translateY(40px);
+      transform: translateX(80px);
+      opacity: 0;
+      transition: inherit;
+    }
+    /* :nth-child(1) {
+      transition-delay: 0.25s;
+    } */
+    :nth-child(2) {
+      transition-delay: 0.3s;
+    }
+    :nth-child(3) {
+      transition-delay: 0.35s;
+    }
+    :nth-child(4) {
+      transition-delay: 0.4s;
+    }
+    :nth-child(5) {
+      transition-delay: 0.5s;
+    }
+    :nth-child(6) {
+      transition-delay: 0.6s;
+    }
+  }
+
+  @keyframes MoveLogoIntoMenu {
+    from {
+      left: 4em;
+      transform: translateX(0%);
+    }
+    to {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes MoveLogoOutsideMenu {
+    0% {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    100% {
+      position: absolute;
+      top: 0;
+      left: 4em;
+      transform: translateX(0);
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+/////////  Ende  /////////////////////////////////
+//////////////////////////////////////////////////
+
+/* 
+@media screen and (max-width: 440px) {
+  @keyframes MoveLogoIntoMenu {
+    from {
+      left: 2em;
+      transform: translateX(0%);
+    }
+    to {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes MoveLogoOutsideMenu {
+    0% {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    100% {
+      position: absolute;
+      top: 0;
+      left: 2em;
+      transform: translateX(0);
+    }
+  }
+ */
+/* @media screen and (max-height: 600px) {
+  .li-kontakt {
+    transition: all 0.15s ease-in-out;
+  }
+  .li-produkte:hover ~ .li-kontakt {
+    transform: translateY(80%);
+  }
+} */

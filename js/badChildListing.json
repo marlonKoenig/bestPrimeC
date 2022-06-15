@@ -1,0 +1,52 @@
+{
+    "user_partnerID": 100001,
+    "user_status": true,
+    "user_licence": true,
+    "user_rank": "Starter",
+    "user_ownFault": false,
+    "user_nextChild":true,
+    "user_childs":[
+        {
+            "user_partnerID": 100003,
+            "user_status": true,
+            "user_licence": false,
+            "user_rank": "Starter",
+            "user_ownFault": false
+        },
+        {
+            "user_partnerID": 100004,
+            "user_status": true,
+            "user_licence": true,
+            "user_rank": "Starter",
+            "user_ownFault": false
+        },
+        {
+            "user_partnerID": 100005,
+            "user_status": false,
+            "user_licence": true,
+            "user_rank": "Starter",
+            "user_ownFault": false
+        },
+        {
+            "user_partnerID": 100006,
+            "user_status": false,
+            "user_licence": true,
+            "user_rank": "Starter",
+            "user_ownFault": false
+        },
+        {
+            "user_partnerID": 100007,
+            "user_status": false,
+            "user_licence": true,
+            "user_rank": "Starter",
+            "user_ownFault": false
+        },
+        {
+            "user_partnerID": 100008,
+            "user_status": true,
+            "user_licence": true,
+            "user_rank": "Starter",
+            "user_ownFault": true
+        }
+    ]
+}

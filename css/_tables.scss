@@ -1,0 +1,36 @@
+// Tabellen
+
+.table{
+    display: table;
+    >div:nth-of-type(odd){
+        background: #E9EBF5; // hellgrau
+        color: black;
+    }
+    >div:nth-of-type(even){
+        background: #CFD5EA; // blaugrau
+        color:black;
+    }
+    .TableRow{
+        display: table-row;
+        align-items: center;
+        height: 2vw;
+        >div{
+        display: table-cell;
+        padding-left: 0.5vw;
+        vertical-align: middle;
+        }
+        &.headline{
+            background-color:$theme-color;
+            color: white;
+            margin-top: 2vh;
+            >div{
+                //display: flex;
+                padding: 0.5vw;
+                //align-items: center;
+            }
+        }
+        >.table-cell{
+            display: table-cell;
+        }
+    }
+}

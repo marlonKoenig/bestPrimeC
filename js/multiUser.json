@@ -1,0 +1,38 @@
+[
+    {
+        "user_id": 100001,
+        "user_status": true,
+        "sponsor": "Savas",
+        "email": "Mickeymouse@aol.com",
+        "firstName": "Markus",
+        "surName": "König",
+        "birthDate": "31.07.1965",
+        "regDate": "16.09.2021",
+        "rank": "Senior Berater",
+        "user_workPlace": "Erding"
+    },
+    {
+        "user_id": 100002,
+        "user_status": false,
+        "sponsor": "Markus König",
+        "email": "Donald-Duck@disney.com",
+        "firstName": "Savas",
+        "surName": "Uzun",
+        "birthDate": "25.06.1974",
+        "regDate": "11.11.2021",
+        "rank": "Präsident",
+        "user_workPlace": "Regensburg"
+    },
+    {
+        "user_id": 100061,
+        "user_status": true,
+        "sponsor": "Savas",
+        "email": "Gozzilla@america.gov",
+        "firstName": "Peter",
+        "surName": "Pan",
+        "birthDate": "7.11.1902",
+        "regDate": "31.09.2020",
+        "rank": "Student",
+        "user_workPlace": "New York"
+    }
+]
